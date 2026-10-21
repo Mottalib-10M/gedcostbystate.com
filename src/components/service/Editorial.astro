@@ -1,0 +1,25 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { route, type Locale } from '../../i18n/routes';
+import { AUTHOR_NAME, SITE_NAMES } from '../../data/site-config';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const en = lang === 'en';
+const title = en ? `Editorial Policy of ${SITE_NAMES.en} 2026: Sources` : `Política editorial de ${SITE_NAMES.es} 2026: fuentes`;
+const description = en ? `How ${SITE_NAMES.en} writes its 2026 pages: official state pages only, every fee dated, estimates labelled, practice questions written by us and said to be.` : `Cómo escribe ${SITE_NAMES.es} sus páginas de 2026: solo páginas estatales oficiales, cada tarifa fechada, estimaciones señaladas y preguntas de práctica propias.`;
+---
+<PageLayout title={title} description={description} lang={lang} noindex={true} breadcrumbs={[{ label: en ? 'Editorial policy' : 'Política editorial' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>{en ? 'Editorial policy' : 'Política editorial'}</h1>
+    <h2>{en ? 'What counts as a source' : 'Qué cuenta como fuente'}</h2>
+    <p>{en ? 'The state pages of ged.com and hiset.org, and the official pages of the two programs on scores, practice tests and online testing. A news article, a forum post or a test prep site can point us to a change; we publish it only after reading the official page.' : 'Las páginas estatales de ged.com y hiset.org, y las páginas oficiales de ambos programas sobre puntajes, exámenes de práctica y examen en línea. Una noticia, un foro o un sitio de preparación pueden avisarnos de un cambio; solo lo publicamos tras leer la página oficial.'}</p>
+    <h2>{en ? 'How a figure reaches a page' : 'Cómo llega una cifra a una página'}</h2>
+    <p>{en ? 'Fees and rules are copied into one data file with the date they were read. Pages and calculators read that file; nobody types an amount into a page. A weekly check flags state pages that changed, and a flagged page is read again before a figure is changed.' : 'Las tarifas y reglas se copian en un solo archivo de datos con la fecha de lectura. Las páginas y calculadoras leen ese archivo; nadie escribe un monto a mano en una página. Un control semanal señala las páginas estatales que cambiaron, y una página señalada se vuelve a leer antes de cambiar una cifra.'}</p>
+    <h2>{en ? 'Estimates and practice questions' : 'Estimaciones y preguntas de práctica'}</h2>
+    <p>{en ? 'A total with retakes is an estimate built on the rules shown on the method page. Practice questions are written by us, never copied from a real test, and are labelled as such wherever they appear.' : 'Un total con repeticiones es una estimación basada en las reglas de la página de método. Las preguntas de práctica las escribimos nosotros, nunca se copian de un examen real, y así se indica en todas partes.'}</p>
+    <h2>{en ? 'Independence' : 'Independencia'}</h2>
+    <p>{en ? `${AUTHOR_NAME} receives nothing from test prep companies, schools, tutors or any business that serves test takers, and the pages carry no affiliate links. The site is not linked to GED Testing Service, ETS or any public body and does not present itself as one.` : `${AUTHOR_NAME} no recibe nada de empresas de preparación, escuelas, tutores ni negocios que atienden a quienes se examinan, y las páginas no tienen enlaces de afiliados. El sitio no está vinculado a GED Testing Service, ETS ni ningún organismo público y no se presenta como tal.`}</p>
+    <h2>{en ? 'Corrections' : 'Correcciones'}</h2>
+    <p>{en ? 'A reported error is checked against the official page; if we were wrong, the page is corrected and its date updated. Write through the' : 'Un error señalado se comprueba con la página oficial; si nos equivocamos, la página se corrige y se actualiza su fecha. Escriba desde la'} <a href={route('contact', lang)}>{en ? 'contact page' : 'página de contacto'}</a>.</p>
+  </div>
+</PageLayout>

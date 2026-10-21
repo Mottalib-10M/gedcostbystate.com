@@ -1,0 +1,37 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../LegalIdentity.astro';
+import { route, type Locale } from '../../i18n/routes';
+import { AUTHOR_NAME, AUTHOR_DESC, CONTACT_EMAIL, SITE_NAMES } from '../../data/site-config';
+import { srcLink } from '../../lib/helpers';
+import { HOME } from '../../content/home';
+import { READ, day } from '../../lib/data';
+import { profilePageSchema, breadcrumbSchema } from '../../lib/seo';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const path = route('about', lang);
+const en = lang === 'en';
+const title = en ? 'About HSE Cost Check: Publisher and Sources, 2026' : 'Quiénes somos: editor y fuentes de HSE Cost Check, 2026';
+const description = en ? 'HSE Cost Check is published by Radif Partners: GED and HiSET fees for all 50 states and DC read on the official pages in 2026, no account, no class to sell.' : 'HSE Cost Check lo publica Radif Partners: tarifas del GED y del HiSET de los 50 estados y DC leídas en las páginas oficiales en 2026, sin cuenta y sin clases que vender.';
+const s = (k: string, t: string) => srcLink(k, lang, t);
+const name = en ? 'About' : 'Quiénes somos';
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[profilePageSchema({ path, lang }), breadcrumbSchema([{ name: en ? 'Home' : 'Inicio', path: route('home', lang) }, { name, path }])]} breadcrumbs={[{ label: name }]}>
+  <article class="prose prose-slate max-w-none">
+    <h1>{en ? `About ${SITE_NAMES.en}` : `Quiénes somos: ${SITE_NAMES.es}`}</h1>
+    <p>{AUTHOR_DESC[lang]}</p>
+    <h2>{en ? 'Why this site exists' : 'Por qué existe este sitio'}</h2>
+    <p>{en ? 'Someone who searches for the cost of the GED mostly finds two kinds of pages. The official site asks you to pick one state and shows its rules, with no way to compare states, add up retakes or see what a state program would pay. Test prep sites publish round figures, sometimes contradictory on the same page, next to a course to buy. Neither gives the total for your own situation.' : 'Quien busca el costo del GED encuentra sobre todo dos tipos de páginas. El sitio oficial pide elegir un estado y muestra sus reglas, sin forma de comparar estados, sumar repeticiones ni ver lo que pagaría un programa estatal. Los sitios de preparación publican cifras redondas, a veces contradictorias en la misma página, junto a un curso que comprar. Ninguno da el total para su propia situación.'}</p>
+    <p><strong>{HOME[lang].valeur}</strong></p>
+    <h2>{en ? 'Who publishes it' : 'Quién lo publica'}</h2>
+    <p>{en ? `The site is published by ${AUTHOR_NAME}, a company that builds calculators from public data. It is not GED Testing Service, ETS, the HiSET program, a state agency or a school. It sells nothing, takes no commission, refers no one to a class or tutor and asks for no name, email or phone number. Pages carry no affiliate links.` : `El sitio lo publica ${AUTHOR_NAME}, una empresa que construye calculadoras a partir de datos públicos. No es GED Testing Service, ni ETS, ni el programa HiSET, ni una agencia estatal, ni una escuela. No vende nada, no cobra comisiones, no envía a nadie a una clase o tutor y no pide nombre, correo ni teléfono. Las páginas no tienen enlaces de afiliados.`}</p>
+    <LegalIdentity lang={lang} />
+    <h2>{en ? 'Where the figures come from' : 'De dónde salen las cifras'}</h2>
+    {en ? <p>The state policy pages of <Fragment set:html={s('ged-policies', 'ged.com')} /> and the state requirements of <Fragment set:html={s('hiset-states', 'hiset.org')} />, read on {day(READ, lang)}, plus the official pages on <Fragment set:html={s('ged-scores', 'GED scores')} />, <Fragment set:html={s('hiset-scores', 'HiSET scores')} /> and <Fragment set:html={s('ged-ready', 'GED Ready')} />. The <a href={route('method', lang)}>method page</a> gives every rule; the <a href={route('editorial', lang)}>editorial policy</a> explains corrections.</p>
+        : <p>Las páginas de reglas estatales de <Fragment set:html={s('ged-policies', 'ged.com')} /> y los requisitos por estado de <Fragment set:html={s('hiset-states', 'hiset.org')} />, leídos el {day(READ, lang)}, más las páginas oficiales de <Fragment set:html={s('ged-scores', 'puntajes del GED')} />, <Fragment set:html={s('hiset-scores', 'puntajes del HiSET')} /> y <Fragment set:html={s('ged-ready', 'GED Ready')} />. La <a href={route('method', lang)}>página de método</a> da cada regla; la <a href={route('editorial', lang)}>política editorial</a> explica las correcciones.</p>}
+    <h2>{en ? 'What the site does not do' : 'Lo que el sitio no hace'}</h2>
+    <p>{en ? 'It cannot book a test, check your eligibility or see your scores. Its totals are computed from the published fees: information, not advice. For your own case, the state page linked on every result and your ged.com or hiset.org account are the reference.' : 'No puede reservar un examen, comprobar su elegibilidad ni ver sus puntajes. Sus totales se calculan a partir de las tarifas publicadas: información, no asesoría. Para su caso, la página estatal enlazada en cada resultado y su cuenta en ged.com o hiset.org son la referencia.'}</p>
+    <h2>{en ? 'Write to us' : 'Escríbanos'}</h2>
+    <p><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>{en ? ', to report an error or a fee that differs from the state page.' : ', para señalar un error o una tarifa que no coincide con la página del estado.'}</p>
+  </article>
+</PageLayout>

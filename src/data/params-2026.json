@@ -1,0 +1,23 @@
+{
+  "_lisezmoi": "Sources générales du site (pages ged.com et hiset.org). Les pages de règles de chaque État sont ajoutées par src/lib/helpers.ts à partir de src/data/hse.json (clés ged-XX et hiset-XX). Chaque montant vit dans hse.json, construit par scripts/build-data.py ; aucun chiffre en dur dans les pages.",
+  "year": 2026,
+  "retrieved_at": "2026-10-22",
+  "valid_from": "2026-10-22",
+  "valid_to": "2026-12-31",
+  "sources": {
+    "ged-policies": { "url": "https://www.ged.com/en/policies.html", "label": { "en": "GED Testing Service, state policies (price, age, residency, retakes)", "es": "GED Testing Service, reglas de cada estado (precio, edad, residencia, repeticiones)" } },
+    "ged-price": { "url": "https://www.ged.com/about-test/price-and-rules.html", "label": { "en": "GED Testing Service, price and state rules", "es": "GED Testing Service, precio y reglas estatales" } },
+    "ged-subjects": { "url": "https://www.ged.com/about-test/test-subjects.html", "label": { "en": "GED Testing Service, test subjects and time limits", "es": "GED Testing Service, materias y tiempos del examen" } },
+    "ged-scores": { "url": "https://www.ged.com/about-test/scores.html", "label": { "en": "GED Testing Service, test scores", "es": "GED Testing Service, puntajes del examen" } },
+    "ged-college-ready": { "url": "https://www.ged.com/about-test/scores/college-ready.html", "label": { "en": "GED Testing Service, College Ready and College Ready + Credit levels", "es": "GED Testing Service, niveles College Ready y College Ready + Credit" } },
+    "ged-ready": { "url": "https://www.ged.com/study/ged-ready.html", "label": { "en": "GED Testing Service, GED Ready official practice test", "es": "GED Testing Service, examen de práctica oficial GED Ready" } },
+    "ged-free-test": { "url": "https://www.ged.com/study/free-online-ged-test.html", "label": { "en": "GED Testing Service, free preview tests", "es": "GED Testing Service, exámenes de muestra gratuitos" } },
+    "ged-classes": { "url": "https://www.ged.com/study/ged-classes.html", "label": { "en": "GED Testing Service, finding GED classes", "es": "GED Testing Service, buscar clases de GED" } },
+    "ged-online": { "url": "https://www.ged.com/take-the-ged-test-online.html", "label": { "en": "GED Testing Service, taking the GED test online", "es": "GED Testing Service, tomar el GED en línea" } },
+    "ged-scheduling": { "url": "https://www.ged.com/about-test/scheduling.html", "label": { "en": "GED Testing Service, scheduling the test", "es": "GED Testing Service, programar el examen" } },
+    "ged-rules": { "url": "https://www.ged.com/content/websites/ged/en-us/exam-rules-and-integrity.html", "label": { "en": "GED Testing Service, exam rules and integrity", "es": "GED Testing Service, reglas del examen" } },
+    "hiset-about": { "url": "https://hiset.org/about-hiset/", "label": { "en": "HiSET program (ETS), about the HiSET exam", "es": "Programa HiSET (ETS), el examen HiSET" } },
+    "hiset-scores": { "url": "https://hiset.org/get-your-scores/", "label": { "en": "HiSET program (ETS), scores and passing requirements", "es": "Programa HiSET (ETS), puntajes y requisitos para aprobar" } },
+    "hiset-states": { "url": "https://hiset.org/get-started/state-requirements/", "label": { "en": "HiSET program (ETS), state requirements", "es": "Programa HiSET (ETS), requisitos por estado" } }
+  }
+}

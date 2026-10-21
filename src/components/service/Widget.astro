@@ -1,0 +1,26 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { SITE_URL } from '../../data/site-config';
+import { route, type Locale } from '../../i18n/routes';
+import { breadcrumbSchema } from '../../lib/seo';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const en = lang === 'en';
+const slug = en ? 'ged-cost' : 'costo-ged';
+const label = en ? 'GED and HiSET cost by state' : 'Costo del GED y del HiSET por estado';
+const code = `<iframe src="${SITE_URL}/embed/${slug}/" title="${label}" width="100%" height="900" style="border:0;max-width:900px" loading="lazy"></iframe>`;
+const name = en ? 'Embed the calculator' : 'Insertar la calculadora';
+---
+<PageLayout title={en ? 'Embed the GED and HiSET cost calculator on your site, 2026' : 'Insertar la calculadora del costo del GED y del HiSET, 2026'} description={en ? 'Adult education programs, libraries and community groups can embed the 2026 GED and HiSET cost calculator, with state fees and retakes, in one line. Free, no cookie.' : 'Programas de educación para adultos, bibliotecas y grupos pueden insertar la calculadora 2026 del costo del GED y del HiSET, con tarifas y repeticiones. Gratis, sin cookies.'} lang={lang} noindex={true} jsonLd={[breadcrumbSchema([{ name: en ? 'Home' : 'Inicio', path: route('home', lang) }, { name, path: route('widget', lang) }])]} breadcrumbs={[{ label: name }]} showAuthor={false}>
+  <header class="mb-6">
+    <h1 class="text-3xl font-bold text-navy-900 md:text-4xl">{name}</h1>
+    <p class="mt-3 text-lg text-navy-700">{en ? 'One line of code. The embedded calculator follows every update of the state fees.' : 'Una línea de código. La calculadora insertada sigue cada actualización de las tarifas estatales.'}</p>
+  </header>
+  <div class="prose prose-slate max-w-none">
+    <pre class="overflow-x-auto rounded-lg bg-navy-900 p-4 text-sm text-white"><code>{code}</code></pre>
+    <p>{en ? 'The calculator runs in the visitor’s browser and sends nothing to us or to you. Please keep the link under the calculator: it is how readers find the sources and the method.' : 'La calculadora funciona en el navegador del visitante y no nos envía nada ni a usted. Conserve el enlace bajo la calculadora: así los lectores encuentran las fuentes y el método.'}</p>
+  </div>
+  <div class="mt-8 overflow-hidden rounded-xl border border-navy-200">
+    <iframe src={`/embed/${slug}/`} title={label} width="100%" height="900" style="border:0" loading="lazy"></iframe>
+  </div>
+</PageLayout>

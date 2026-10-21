@@ -1,0 +1,30 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../LegalIdentity.astro';
+import { CONTACT_EMAIL, SITE_NAMES } from '../../data/site-config';
+import { route, type Locale } from '../../i18n/routes';
+import { contactPageSchema } from '../../lib/seo';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const en = lang === 'en';
+const path = route('contact', lang);
+const description = en ? `Write to the publisher of ${SITE_NAMES.en} about a 2026 fee, a rule or a source. Email only: no form, no account, no class, tutor or test prep to sell you.` : `Escriba al editor de ${SITE_NAMES.es} sobre una tarifa, una regla o una fuente de 2026. Solo por correo: sin formulario, sin cuenta, sin clases ni tutores que venderle.`;
+const title = en ? `Contact ${SITE_NAMES.en} 2026: Corrections and Sources` : `Contacto de ${SITE_NAMES.es} 2026: correcciones y fuentes`;
+---
+<PageLayout title={title} description={description} lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: en ? 'Contact' : 'Contacto', description, path, lang })]} breadcrumbs={[{ label: en ? 'Contact' : 'Contacto' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>{en ? 'Contact' : 'Contacto'}</h1>
+    <p>{en ? 'Write to' : 'Escriba a'} <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. {en ? 'There is no form, no phone line and no account: one address, read by the people who keep the fees and calculators up to date.' : 'No hay formulario, ni teléfono, ni cuenta: una sola dirección, leída por quienes mantienen al día las tarifas y las calculadoras.'}</p>
+    <h2>{en ? 'Messages that help' : 'Mensajes que ayudan'}</h2>
+    <ul>
+      <li>{en ? 'A fee or rule that differs from the state page: give the state, the test and the date you looked.' : 'Una tarifa o regla que no coincide con la página del estado: indique el estado, el examen y la fecha en que lo vio.'}</li>
+      <li>{en ? 'A practice question you think is wrong, with the reason.' : 'Una pregunta de práctica que crea errónea, con el motivo.'}</li>
+      <li>{en ? 'A state program or voucher the site does not mention yet.' : 'Un programa o bono estatal que el sitio aún no menciona.'}</li>
+      <li>{en ? 'Embedding the calculator on an adult education or library site:' : 'Insertar la calculadora en un sitio de educación para adultos o de una biblioteca:'} <a href={route('widget', lang)}>{en ? 'embed page' : 'página para insertar'}</a>.</li>
+    </ul>
+    <h2>{en ? 'What we cannot do' : 'Lo que no podemos hacer'}</h2>
+    <p>{en ? 'We cannot book or cancel a test, see scores or confirm eligibility. For your own account, use ged.com, hiset.org or your state’s adult education office.' : 'No podemos reservar ni cancelar un examen, ver puntajes ni confirmar la elegibilidad. Para su cuenta, use ged.com, hiset.org o la oficina de educación para adultos de su estado.'}</p>
+    <h2>{en ? 'Publisher' : 'Editor'}</h2>
+    <LegalIdentity lang={lang} />
+  </div>
+</PageLayout>

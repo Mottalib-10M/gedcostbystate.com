@@ -1,0 +1,1223 @@
+{
+ "read": "2026-10-22",
+ "states": [
+  {
+   "code": "AL",
+   "en": "Alabama",
+   "es": "Alabama",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "age": 18,
+    "under": 16,
+    "res": "under18",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/alabama/"
+   }
+  },
+  {
+   "code": "AK",
+   "en": "Alaska",
+   "es": "Alaska",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "first": 0,
+    "firstO": 0,
+    "sub": "promo",
+    "age": 18,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "help": {
+     "en": "Alaska pays the first attempt of each subject while funding lasts.",
+     "es": "Alaska paga el primer intento de cada materia mientras haya fondos."
+    },
+    "url": "https://www.ged.com/policies/alaska/"
+   }
+  },
+  {
+   "code": "AZ",
+   "en": "Arizona",
+   "es": "Arizona",
+   "ged": {
+    "c": 41,
+    "o": 41,
+    "rc": 15,
+    "age": 18,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/arizona/"
+   }
+  },
+  {
+   "code": "AR",
+   "en": "Arkansas",
+   "es": "Arkansas",
+   "ged": {
+    "c": 4,
+    "o": 36,
+    "rc": 0,
+    "age": 18,
+    "under": 16,
+    "res": "yes",
+    "extra": "civics",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/arkansas/"
+   }
+  },
+  {
+   "code": "CA",
+   "en": "California",
+   "es": "California",
+   "ged": {
+    "c": 41,
+    "o": 41,
+    "rc": 15,
+    "age": 18,
+    "under": 17,
+    "res": "yes",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/california/"
+   },
+   "hiset": {
+    "hc": 34,
+    "ho": 43,
+    "tf": 20,
+    "once": 20,
+    "sub": "cond",
+    "age": 18,
+    "res": "yes",
+    "help": {
+     "en": "A fee waiver exists for those who qualify; the $20 state fee is paid once, at the first booking.",
+     "es": "Existe una exención para quien califica; la tarifa estatal de 20 $ se paga una vez, en la primera reserva."
+    },
+    "url": "https://hiset.org/california/"
+   }
+  },
+  {
+   "code": "CO",
+   "en": "Colorado",
+   "es": "Colorado",
+   "ged": {
+    "c": 43.5,
+    "o": 43.5,
+    "rc": 17.5,
+    "age": 17,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/colorado/"
+   },
+   "hiset": {
+    "hc": 32.5,
+    "hp": 35.5,
+    "ho": 48.5,
+    "tf": 18,
+    "age": 17,
+    "res": "no",
+    "url": "https://hiset.org/colorado/"
+   }
+  },
+  {
+   "code": "CT",
+   "en": "Connecticut",
+   "es": "Connecticut",
+   "ged": {
+    "c": 0,
+    "o": null,
+    "rc": 0,
+    "once": 13,
+    "onceWhat": "registration",
+    "age": 19,
+    "under": 17,
+    "res": "yes",
+    "nd": 1,
+    "w1": 60,
+    "w3": 60,
+    "cap": 3,
+    "help": {
+     "en": "Connecticut charges $0 per subject; only a $13 registration fee is due.",
+     "es": "Connecticut cobra 0 $ por materia; solo se paga una inscripción de 13 $."
+    },
+    "url": "https://www.ged.com/policies/connecticut/"
+   }
+  },
+  {
+   "code": "DE",
+   "en": "Delaware",
+   "es": "Delaware",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "age": 18,
+    "under": 16,
+    "res": "yes",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/delaware/"
+   }
+  },
+  {
+   "code": "DC",
+   "en": "District of Columbia",
+   "es": "Distrito de Columbia",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 0,
+    "first": 3.75,
+    "firstO": 36,
+    "sub": "promo",
+    "age": 18,
+    "under": 16,
+    "res": "yes",
+    "nd": 1,
+    "w1": 30,
+    "w3": 60,
+    "readyBeforeRetake": true,
+    "help": {
+     "en": "With the code DCSAVE36, the first attempt of each subject at a test center costs $3.75; online it is full price.",
+     "es": "Con el código DCSAVE36, el primer intento de cada materia en un centro cuesta 3,75 $; en línea se paga el precio completo."
+    },
+    "url": "https://www.ged.com/policies/district_of_columbia/"
+   }
+  },
+  {
+   "code": "FL",
+   "en": "Florida",
+   "es": "Florida",
+   "ged": {
+    "c": 38,
+    "o": null,
+    "rc": 12,
+    "age": 18,
+    "under": 16,
+    "res": "address",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/florida/"
+   }
+  },
+  {
+   "code": "GA",
+   "en": "Georgia",
+   "es": "Georgia",
+   "ged": {
+    "c": 46,
+    "o": 46,
+    "rc": 20,
+    "age": 18,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/georgia/"
+   },
+   "hiset": {
+    "hc": 34,
+    "ho": 49,
+    "tf": 18,
+    "sub": "cond",
+    "age": 18,
+    "res": "no",
+    "help": {
+     "en": "Vouchers are available through the Georgia state program.",
+     "es": "Hay bonos disponibles a través del programa estatal de Georgia."
+    },
+    "url": "https://hiset.org/georgia/"
+   }
+  },
+  {
+   "code": "HI",
+   "en": "Hawaii",
+   "es": "Hawái",
+   "ged": {
+    "c": 43.5,
+    "o": null,
+    "rc": 17.5,
+    "age": 18,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/hawaii/"
+   },
+   "hiset": {
+    "hc": 18,
+    "hp": 28,
+    "ho": 41,
+    "tf": 18,
+    "age": 18,
+    "res": "no",
+    "url": "https://hiset.org/hawaii/"
+   }
+  },
+  {
+   "code": "ID",
+   "en": "Idaho",
+   "es": "Idaho",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "age": 18,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/idaho/"
+   }
+  },
+  {
+   "code": "IL",
+   "en": "Illinois",
+   "es": "Illinois",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "first": 10,
+    "firstO": 10,
+    "sub": "promo",
+    "age": 18,
+    "under": 17,
+    "res": "30d",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "help": {
+     "en": "The Illinois Community College Board takes $26 off the first attempt of each subject with the code ILSAVE2026, while funding lasts.",
+     "es": "El Illinois Community College Board descuenta 26 $ del primer intento de cada materia con el código ILSAVE2026, mientras haya fondos."
+    },
+    "url": "https://www.ged.com/policies/illinois/"
+   },
+   "hiset": {
+    "hc": 26,
+    "ho": 41,
+    "tf": 18,
+    "age": 18,
+    "res": "30d",
+    "url": "https://hiset.org/illinois/"
+   }
+  },
+  {
+   "code": "IN",
+   "en": "Indiana",
+   "es": "Indiana",
+   "ged": {
+    "c": 45,
+    "o": 36,
+    "rc": 10,
+    "age": 18,
+    "under": 16,
+    "res": "30d",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/indiana/"
+   },
+   "hiset": {
+    "hc": null,
+    "ho": null,
+    "tf": null,
+    "sub": "cond",
+    "age": 18,
+    "res": "30d",
+    "atHomeSuspended": true,
+    "help": {
+     "en": "Indiana provides test code vouchers; paper and computer fees are set by each test center.",
+     "es": "Indiana ofrece bonos con código; las tarifas en papel y computadora las fija cada centro."
+    },
+    "url": "https://hiset.org/indiana/"
+   }
+  },
+  {
+   "code": "IA",
+   "en": "Iowa",
+   "es": "Iowa",
+   "hiset": {
+    "hc": 18,
+    "ho": 41,
+    "tf": 18,
+    "age": 18,
+    "res": "no",
+    "url": "https://hiset.org/iowa/"
+   }
+  },
+  {
+   "code": "KS",
+   "en": "Kansas",
+   "es": "Kansas",
+   "ged": {
+    "c": 39,
+    "o": 39,
+    "rc": 13,
+    "age": 18,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/kansas/"
+   }
+  },
+  {
+   "code": "KY",
+   "en": "Kentucky",
+   "es": "Kentucky",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "age": 19,
+    "under": 17,
+    "res": "yes",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/kentucky/"
+   }
+  },
+  {
+   "code": "LA",
+   "en": "Louisiana",
+   "es": "Luisiana",
+   "ged": {
+    "c": 38.5,
+    "o": 36,
+    "rc": 10,
+    "age": 19,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/louisiana/"
+   },
+   "hiset": {
+    "hc": 24,
+    "ho": 41,
+    "tf": 18,
+    "once": 10,
+    "age": 19,
+    "res": "no",
+    "url": "https://hiset.org/louisiana/"
+   }
+  },
+  {
+   "code": "ME",
+   "en": "Maine",
+   "es": "Maine",
+   "hiset": {
+    "hc": 60,
+    "ho": null,
+    "tf": 45,
+    "first": 0,
+    "sub": "all",
+    "age": 17,
+    "res": "no",
+    "help": {
+     "en": "There is no fee for Maine residents.",
+     "es": "No hay tarifa para los residentes de Maine."
+    },
+    "url": "https://hiset.org/maine/"
+   }
+  },
+  {
+   "code": "MD",
+   "en": "Maryland",
+   "es": "Maryland",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "first": 14.25,
+    "firstO": 14.25,
+    "sub": "all",
+    "age": 18,
+    "under": 16,
+    "res": "yes",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "help": {
+     "en": "Maryland lowers the first attempt of each subject to $14.25 with the code MDGED2175, at a center or online; retakes are not subsidized.",
+     "es": "Maryland reduce el primer intento de cada materia a 14,25 $ con el código MDGED2175, en un centro o en línea; las repeticiones no se subsidian."
+    },
+    "url": "https://www.ged.com/policies/maryland/"
+   }
+  },
+  {
+   "code": "MA",
+   "en": "Massachusetts",
+   "es": "Massachusetts",
+   "ged": {
+    "c": 36,
+    "o": null,
+    "rc": 10,
+    "age": 18,
+    "under": 16,
+    "res": "yes",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/massachusetts/"
+   },
+   "hiset": {
+    "hc": null,
+    "ho": null,
+    "tf": null,
+    "first": 0,
+    "sub": "all",
+    "freeRetakes": 2,
+    "age": 18,
+    "res": "yes",
+    "help": {
+     "en": "Massachusetts pays the first test in each subject plus two retakes per subject.",
+     "es": "Massachusetts paga el primer examen de cada materia y dos repeticiones por materia."
+    },
+    "url": "https://hiset.org/massachusetts/"
+   }
+  },
+  {
+   "code": "MI",
+   "en": "Michigan",
+   "es": "Míchigan",
+   "ged": {
+    "c": 43.5,
+    "o": 43.5,
+    "rc": 10,
+    "age": 18,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/es/policies/michigan/"
+   },
+   "hiset": {
+    "hc": 26,
+    "ho": 41,
+    "tf": 18,
+    "once": 30,
+    "age": 18,
+    "res": "no",
+    "url": "https://hiset.org/michigan/"
+   }
+  },
+  {
+   "code": "MN",
+   "en": "Minnesota",
+   "es": "Minnesota",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "first": 26,
+    "firstO": 26,
+    "sub": "promo",
+    "age": 19,
+    "under": 17,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "help": {
+     "en": "Minnesota takes $10 off the first attempt of each subject with the code MNGED10, while funding lasts.",
+     "es": "Minnesota descuenta 10 $ del primer intento de cada materia con el código MNGED10, mientras haya fondos."
+    },
+    "url": "https://www.ged.com/policies/minnesota/"
+   },
+   "hiset": {
+    "hc": 28,
+    "ho": 41,
+    "tf": 18,
+    "first": 20,
+    "firstO": 33,
+    "sub": "promo",
+    "age": 19,
+    "res": "no",
+    "help": {
+     "en": "With the code MNHISET8, Minnesota residents get $8 off each subtest the first time, up to $40.",
+     "es": "Con el código MNHISET8, los residentes de Minnesota obtienen 8 $ de descuento en cada prueba la primera vez, hasta 40 $."
+    },
+    "url": "https://hiset.org/minnesota/"
+   }
+  },
+  {
+   "code": "MS",
+   "en": "Mississippi",
+   "es": "Misisipi",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 0,
+    "first": 0,
+    "firstO": 36,
+    "sub": "all",
+    "retakeFree": true,
+    "age": 18,
+    "under": 16,
+    "res": "yes",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "help": {
+     "en": "Mississippi pays every attempt at a Mississippi test center, retakes included (codes MSFREEGED and MSRETAKE); it does not pay for online testing.",
+     "es": "Misisipi paga todos los intentos en un centro de Misisipi, repeticiones incluidas (códigos MSFREEGED y MSRETAKE); no paga el examen en línea."
+    },
+    "url": "https://www.ged.com/policies/mississippi/"
+   },
+   "hiset": {
+    "hc": null,
+    "ho": null,
+    "tf": null,
+    "first": 0,
+    "sub": "all",
+    "freeRetakes": 2,
+    "since": "2026-07-01",
+    "age": 18,
+    "res": "yes",
+    "help": {
+     "en": "Since July 1, 2026, Mississippi pays the HiSET tests and two retests per subtest.",
+     "es": "Desde el 1 de julio de 2026, Misisipi paga los exámenes HiSET y dos repeticiones por prueba."
+    },
+    "url": "https://hiset.org/mississippi/"
+   }
+  },
+  {
+   "code": "MO",
+   "en": "Missouri",
+   "es": "Misuri",
+   "ged": {
+    "c": 33,
+    "o": 36,
+    "rc": 7,
+    "once": 10,
+    "onceWhat": "yearly",
+    "age": 17,
+    "under": null,
+    "res": "yes",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/missouri/"
+   },
+   "hiset": {
+    "hc": 22,
+    "ho": 32.5,
+    "tf": 15,
+    "once": 10,
+    "age": 17,
+    "res": "yes",
+    "url": "https://hiset.org/missouri/"
+   }
+  },
+  {
+   "code": "MT",
+   "en": "Montana",
+   "es": "Montana",
+   "ged": {
+    "c": 26,
+    "o": 36,
+    "rc": null,
+    "centerExtra": true,
+    "age": 19,
+    "under": 16,
+    "res": "yes",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/montana/"
+   },
+   "hiset": {
+    "hc": 28,
+    "ho": null,
+    "tf": 18,
+    "upTo": true,
+    "age": 19,
+    "res": "yes",
+    "url": "https://hiset.org/montana/"
+   }
+  },
+  {
+   "code": "NE",
+   "en": "Nebraska",
+   "es": "Nebraska",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "age": 18,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/nebraska/"
+   }
+  },
+  {
+   "code": "NV",
+   "en": "Nevada",
+   "es": "Nevada",
+   "ged": {
+    "c": 31,
+    "o": 36,
+    "rc": 5,
+    "age": 18,
+    "under": 16,
+    "res": "yes",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/nevada/"
+   },
+   "hiset": {
+    "hc": 23,
+    "ho": 41,
+    "tf": 18,
+    "upTo": true,
+    "age": 18,
+    "res": "yes",
+    "url": "https://hiset.org/nevada/"
+   }
+  },
+  {
+   "code": "NH",
+   "en": "New Hampshire",
+   "es": "Nuevo Hampshire",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "paper": 46,
+    "age": 18,
+    "under": 16,
+    "res": "yes",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/new_hampshire/"
+   },
+   "hiset": {
+    "hc": 28,
+    "ho": 51,
+    "tf": 18,
+    "age": 18,
+    "res": "yes",
+    "url": "https://hiset.org/new-hampshire/"
+   }
+  },
+  {
+   "code": "NJ",
+   "en": "New Jersey",
+   "es": "Nueva Jersey",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "age": 18,
+    "under": 16,
+    "res": "id",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/new_jersey/"
+   }
+  },
+  {
+   "code": "NM",
+   "en": "New Mexico",
+   "es": "Nuevo México",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "sub": "cond",
+    "age": 18,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "help": {
+     "en": "New Mexico residents can have their fees covered by the Free High School Equivalency program after scoring 145 or more on GED Ready within 60 days of scheduling.",
+     "es": "Los residentes de Nuevo México pueden obtener las tarifas pagadas por el programa Free High School Equivalency tras sacar 145 o más en GED Ready dentro de los 60 días previos a programar."
+    },
+    "url": "https://www.ged.com/policies/new_mexico/"
+   },
+   "hiset": {
+    "hc": 26,
+    "hp": 18,
+    "ho": 41,
+    "tf": 18,
+    "sub": "cond",
+    "age": 18,
+    "res": "no",
+    "help": {
+     "en": "Vouchers are available through the state office or adult education providers.",
+     "es": "Hay bonos a través de la oficina estatal o de los proveedores de educación para adultos."
+    },
+    "url": "https://hiset.org/new-mexico/"
+   }
+  },
+  {
+   "code": "NY",
+   "en": "New York",
+   "es": "Nueva York",
+   "ged": {
+    "c": 0,
+    "o": null,
+    "rc": 0,
+    "age": 19,
+    "under": 16,
+    "res": "30d",
+    "nd": 1,
+    "w1": 60,
+    "w3": 60,
+    "cap": 3,
+    "noRetakePassed": true,
+    "help": {
+     "en": "New York State pays for every GED subject; there is nothing to pay.",
+     "es": "El estado de Nueva York paga todas las materias del GED; no hay nada que pagar."
+    },
+    "url": "https://www.ged.com/policies/new_york/"
+   }
+  },
+  {
+   "code": "NC",
+   "en": "North Carolina",
+   "es": "Carolina del Norte",
+   "ged": {
+    "c": 26,
+    "o": 36,
+    "rc": 0,
+    "age": 18,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/north_carolina/"
+   },
+   "hiset": {
+    "hc": 18,
+    "ho": 41,
+    "tf": 18,
+    "age": 18,
+    "res": "no",
+    "url": "https://hiset.org/north-carolina/"
+   }
+  },
+  {
+   "code": "ND",
+   "en": "North Dakota",
+   "es": "Dakota del Norte",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "age": 16,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/north_dakota/"
+   }
+  },
+  {
+   "code": "OH",
+   "en": "Ohio",
+   "es": "Ohio",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "sub": "cond",
+    "voucher": 80,
+    "age": 18,
+    "under": 16,
+    "res": "yes",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "help": {
+     "en": "First-time testers can get a voucher worth up to $80 through a Career-Technical Planning District.",
+     "es": "Quien se examina por primera vez puede recibir un bono de hasta 80 $ a través de un Career-Technical Planning District."
+    },
+    "url": "https://www.ged.com/policies/ohio/"
+   },
+   "hiset": {
+    "hc": 26,
+    "ho": 41,
+    "tf": 18,
+    "sub": "cond",
+    "voucher": 80,
+    "age": null,
+    "res": "yes",
+    "help": {
+     "en": "Vouchers worth $80 are available for paper or computer testing.",
+     "es": "Hay bonos de 80 $ para el examen en papel o en computadora."
+    },
+    "url": "https://hiset.org/ohio/"
+   }
+  },
+  {
+   "code": "OK",
+   "en": "Oklahoma",
+   "es": "Oklahoma",
+   "ged": {
+    "c": 41,
+    "o": 41,
+    "rc": 15,
+    "age": 18,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/oklahoma/"
+   },
+   "hiset": {
+    "hc": 33,
+    "ho": 48.5,
+    "tf": 20.5,
+    "age": 18,
+    "res": "no",
+    "url": "https://hiset.org/oklahoma/"
+   }
+  },
+  {
+   "code": "OR",
+   "en": "Oregon",
+   "es": "Oregón",
+   "ged": {
+    "c": 44,
+    "o": 44,
+    "rc": 10,
+    "age": 18,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/oregon/"
+   }
+  },
+  {
+   "code": "PA",
+   "en": "Pennsylvania",
+   "es": "Pensilvania",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "first": 0,
+    "firstO": 0,
+    "sub": "all",
+    "age": 18,
+    "under": 16,
+    "res": "yes",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "help": {
+     "en": "Pennsylvania covers the first attempt of up to four subjects for residents, at a public center or online, with the code PAFreeGED.",
+     "es": "Pensilvania cubre el primer intento de hasta cuatro materias para residentes, en un centro público o en línea, con el código PAFreeGED."
+    },
+    "url": "https://www.ged.com/policies/pennsylvania/"
+   },
+   "hiset": {
+    "hc": 26,
+    "ho": 41,
+    "tf": 18,
+    "first": 0,
+    "firstO": 0,
+    "sub": "all",
+    "age": 18,
+    "res": "yes",
+    "help": {
+     "en": "Pennsylvania covers up to five subtests for residents with the code PAFreeHiSET.",
+     "es": "Pensilvania cubre hasta cinco pruebas para residentes con el código PAFreeHiSET."
+    },
+    "url": "https://hiset.org/pennsylvania/"
+   }
+  },
+  {
+   "code": "RI",
+   "en": "Rhode Island",
+   "es": "Rhode Island",
+   "ged": {
+    "c": 30,
+    "o": 36,
+    "rc": 13,
+    "nd": 2,
+    "sub": "cond",
+    "age": 18,
+    "under": 16,
+    "res": "yes",
+    "w1": 0,
+    "w3": 60,
+    "help": {
+     "en": "People with limited income can get a fee waiver if they prove financial hardship and score Likely to Pass on GED Ready.",
+     "es": "Las personas con ingresos limitados pueden obtener una exención si prueban dificultad económica y sacan Likely to Pass en GED Ready."
+    },
+    "url": "https://www.ged.com/policies/rhode_island/"
+   }
+  },
+  {
+   "code": "SC",
+   "en": "South Carolina",
+   "es": "Carolina del Sur",
+   "ged": {
+    "c": 37.5,
+    "o": 43.5,
+    "rc": 17.5,
+    "nd": 2,
+    "age": 19,
+    "under": 16,
+    "res": "yes",
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/south_carolina/"
+   }
+  },
+  {
+   "code": "SD",
+   "en": "South Dakota",
+   "es": "Dakota del Sur",
+   "ged": {
+    "c": 50,
+    "o": 50,
+    "rc": 20,
+    "age": 18,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/south_dakota/"
+   }
+  },
+  {
+   "code": "TN",
+   "en": "Tennessee",
+   "es": "Tennessee",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "sub": "cond",
+    "age": 18,
+    "under": 17,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "help": {
+     "en": "The test can be paid by vouchers for people who attend a local adult education program.",
+     "es": "El examen puede pagarse con bonos para quien asiste a un programa local de educación para adultos."
+    },
+    "url": "https://www.ged.com/policies/tennessee/"
+   },
+   "hiset": {
+    "hc": 23,
+    "ho": 41,
+    "tf": 18,
+    "sub": "cond",
+    "age": 18,
+    "res": "yes",
+    "help": {
+     "en": "The HiSET Voucher Program, through local adult education, covers all costs of the exams.",
+     "es": "El HiSET Voucher Program, a través de la educación para adultos local, cubre todos los costos de los exámenes."
+    },
+    "url": "https://hiset.org/tennessee/"
+   }
+  },
+  {
+   "code": "TX",
+   "en": "Texas",
+   "es": "Texas",
+   "ged": {
+    "c": 36.25,
+    "o": 42.25,
+    "rc": 16.25,
+    "nd": 2,
+    "sub": "cond",
+    "condAge": 21,
+    "age": 18,
+    "under": 16,
+    "res": "yes",
+    "w1": 0,
+    "w3": 60,
+    "help": {
+     "en": "The HSE Subsidy Program pays the test fees of eligible people aged 21 and older through a Texas Workforce Commission Adult Education and Literacy program, while funding lasts.",
+     "es": "El HSE Subsidy Program paga las tarifas de las personas elegibles de 21 años o más a través de un programa de Educación y Alfabetización de Adultos de la Texas Workforce Commission, mientras haya fondos."
+    },
+    "url": "https://www.ged.com/policies/texas/"
+   }
+  },
+  {
+   "code": "UT",
+   "en": "Utah",
+   "es": "Utah",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "age": 18,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/utah/"
+   }
+  },
+  {
+   "code": "VT",
+   "en": "Vermont",
+   "es": "Vermont",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "age": 18,
+    "under": 16,
+    "res": "yes",
+    "nd": 1,
+    "w1": 0,
+    "w3": 0,
+    "cap": 3,
+    "url": "https://www.ged.com/policies/vermont/"
+   }
+  },
+  {
+   "code": "VA",
+   "en": "Virginia",
+   "es": "Virginia",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "age": 18,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/virginia/"
+   }
+  },
+  {
+   "code": "WA",
+   "en": "Washington",
+   "es": "Washington",
+   "ged": {
+    "c": 36,
+    "o": 36,
+    "rc": 10,
+    "age": 19,
+    "under": 16,
+    "res": "yes",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/washington/"
+   }
+  },
+  {
+   "code": "WV",
+   "en": "West Virginia",
+   "es": "Virginia Occidental",
+   "ged": {
+    "c": 0,
+    "o": null,
+    "rc": 0,
+    "age": 19,
+    "under": null,
+    "res": "no",
+    "viaProgram": true,
+    "nd": 1,
+    "w1": 14,
+    "w3": 60,
+    "cap": 4,
+    "help": {
+     "en": "There is no cost to the test taker, but the test is scheduled through a local adult learning or Option Pathway program.",
+     "es": "No cuesta nada a quien se examina, pero el examen se programa a través de un programa local de aprendizaje para adultos u Option Pathway."
+    },
+    "url": "https://www.ged.com/policies/west_virginia/"
+   }
+  },
+  {
+   "code": "WI",
+   "en": "Wisconsin",
+   "es": "Wisconsin",
+   "ged": {
+    "c": 41,
+    "o": 41,
+    "rc": 10,
+    "age": 18.5,
+    "under": 17,
+    "res": "10d",
+    "since": "2026-07-01",
+    "nd": 1,
+    "w1": 0,
+    "w3": 60,
+    "url": "https://www.ged.com/policies/wisconsin/"
+   }
+  },
+  {
+   "code": "WY",
+   "en": "Wyoming",
+   "es": "Wyoming",
+   "ged": {
+    "c": 26,
+    "o": null,
+    "rc": 0,
+    "centerExtra": true,
+    "age": 18,
+    "under": 16,
+    "res": "no",
+    "nd": 1,
+    "w1": 7,
+    "w3": 7,
+    "cap": 7,
+    "url": "https://www.ged.com/policies/wyoming/"
+   },
+   "hiset": {
+    "hc": 18,
+    "ho": 41,
+    "tf": 18,
+    "centerExtra": true,
+    "age": null,
+    "res": "no",
+    "url": "https://hiset.org/wyoming/"
+   }
+  }
+ ]
+}
