@@ -1,0 +1,73 @@
+import { defineGuide } from '../../lib/page-types';
+import { GENERAL } from '../../lib/data';
+
+const G = GENERAL.ged;
+
+export default defineGuide({
+  id: 'ged-social-studies', group: 'prep', order: 14,
+  tool: 'quiz-social',
+  related: ['ged-practice-test', 'ged-language-arts', 'ged-science', 'ged-ready', 'ged-passing-score', 'ged-cost'],
+  sources: ['ged-subjects', 'ged-free-test', 'ged-college-ready', 'ged-ready'],
+  en: {
+    slug: 'ged-social-studies-practice-test',
+    nav: 'GED social studies practice', card: '8 civics, history, economics and geography questions',
+    title: 'GED Social Studies Practice Test 2026: Civics and History',
+    description: 'GED social studies practice test for 2026: 8 free questions on civics, U.S. history, economics and geography, each one explained, plus the test format.',
+    h1: 'GED social studies practice test: civics, history, economics',
+    intro: `Eight questions on government, history, economics and geography, written by us, each explained. The real test is the shortest GED subject: ${G.minutes.social} minutes.`,
+    resume: `The GED social studies test lasts ${G.minutes.social} minutes, including 2 minutes of instructions and final review, with no break, which makes it the shortest of the four subjects. ged.com lists three skills: reading for meaning in social studies, analyzing historical events and arguments, and using numbers and graphs in social studies. There is an on-screen calculator with a reference sheet, and at a test center you may bring a TI-30XS. Questions are multiple choice, drag and drop, fill in the blank, select an area and drop-down. The content covers civics and U.S. government, U.S. history, economics, and geography and the world. Social studies passes at ${G.pass}, and from ${G.collegeCredit} it can be worth up to ${G.creditsBySubject.social} college credits in social sciences, depending on the college. The eight questions above are ours: the branch that interprets laws, senators per state, the Bill of Rights, price and demand, the 19th Amendment, checks and balances, an unemployment rate computed from a town’s figures, and the equator. Like science, much of the real test hands you a passage, a map or a chart and asks what it shows; prior knowledge helps you read faster, but the evidence is on the screen.`,
+    faqs: [
+      { q: 'What is on the GED social studies test?', a: 'ged.com lists three skills: reading for meaning in social studies, analyzing historical events and arguments, and using numbers and graphs. In content terms, the questions cover civics and government, U.S. history, economics, and geography and the world. Founding documents such as the Constitution often appear as short excerpts.' },
+      { q: 'How long is GED social studies?', a: `${G.minutes.social} minutes with no break, including 2 minutes of instructions and review. It is the shortest of the four subjects, against ${G.minutes.science} for science, ${G.minutes.math} for math and ${G.minutes.rla} for language arts, so pace matters: about one minute per question is a reasonable target.` },
+      { q: 'Is the GED social studies test hard?', a: 'It is short and reading-based, so it rewards steady reading more than memory. The difficulty is in the documents: an old text with unfamiliar words, or a chart with two scales. Practicing on founding documents and economic graphs removes most of the surprise.' },
+      { q: 'Do I need to know dates for the GED?', a: 'A few landmarks help you place a document in time: 1776, the Constitution in 1787, the Civil War in the 1860s, the 19th Amendment in 1920, the civil rights era. But questions rarely ask for a date alone; they ask what an event or document shows, or how two sources differ.' },
+    ],
+    body: (h) => `
+<h2>What each skill looks like on screen</h2>
+<p><strong>Reading for meaning</strong>: an excerpt from a Supreme Court decision, and a question on the main argument. <strong>Analyzing historical events and arguments</strong>: two speeches on the same law, and a question on what they disagree about, or which statement is a fact and which an opinion. <strong>Using numbers and graphs</strong>: a chart of unemployment over ten years, or a table of state populations, and a question on a trend, a difference or a rate.</p>
+<h2>Civics in five ideas</h2>
+<p>Most civics questions rest on a short list. <strong>Separation of powers</strong>: Congress makes laws, the president enforces them, the courts interpret them. <strong>Checks and balances</strong>: each branch can limit the others, as with a veto or a court ruling. <strong>Federalism</strong>: power is shared between the national government and the states. <strong>Rights</strong>: the Bill of Rights and later amendments protect individuals from the government. <strong>Representation</strong>: two senators per state, House seats by population.</p>
+${h.mini('ready', { p: ['st', 'n'], d: { st: 'OH', n: 1 }, t: 'Practice test or retake: the price in your state' })}
+<h2>An extra economics example</h2>
+<p>A city raises its minimum wage. A business owner says she will hire fewer workers; a union leader says workers will spend more in local shops. Which statement is a prediction rather than a fact? Both are predictions: neither has happened yet. A question like this checks that you separate what a source claims will happen from what the data in front of you actually shows.</p>
+<h2>Scores and credit</h2>
+<p>Social studies passes at ${h.n(G.pass)} and is scored separately from the other subjects. From ${h.n(G.collegeReady)} it reaches College Ready; from ${h.n(G.collegeCredit)}, ged.com says it can be worth up to ${G.creditsBySubject.social} credits in social sciences, depending on the college. Because the test is short, a retake also takes less of your day, but it costs the same retake price as any other subject in your state.</p>
+<h2>How to prepare</h2>
+<p>Read the Preamble, the Bill of Rights and a few short Supreme Court summaries; they come back as excerpts. Practice charts on prices, wages and population. Work on the difference between fact, opinion and claim with the ${h.a('ged-language-arts', 'language arts questions')}, which train the same reading. If you plan to test online, a green GED Ready score in social studies is required within ${G.readyGreenDays} days of the test; the ${h.a('ged-ready', 'GED Ready page')} details it.</p>
+<h2>Two sources on the same event</h2>
+<p>A frequent format puts two documents side by side: a newspaper editorial from 1935 praising a new program and a letter from the same year criticizing it, for instance. The questions ask what both authors agree on, what point of view each one takes, or which one uses statistics as evidence. Before answering, write one line in your head for each source: who wrote it, when, and what it wants the reader to believe. That line is usually enough to eliminate two of the four choices.</p>
+<h2>Maps and geography</h2>
+<p>Geography questions rarely ask you to name a country from memory. They show a map with a key and ask what it tells you: where population is densest, which region a river crosses, how a border changed. Read the key and the scale before the question, as with any graph, and check the date of the map: a map from 1850 and one from today can show the same place very differently.</p>`,
+  },
+  es: {
+    slug: 'practica-estudios-sociales-ged',
+    nav: 'Práctica de estudios sociales GED', card: '8 preguntas de cívica, historia, economía y geografía',
+    title: 'Práctica de estudios sociales del GED 2026: cívica, historia',
+    description: 'Práctica de estudios sociales del GED 2026: 8 preguntas gratis de cívica, historia de EE. UU., economía y geografía, cada una explicada, y el formato.',
+    h1: 'Práctica de estudios sociales del GED: cívica, historia, economía',
+    intro: `Ocho preguntas de gobierno, historia, economía y geografía, escritas por nosotros, cada una explicada. El examen real es la materia más corta del GED: ${G.minutes.social} minutos.`,
+    resume: `El examen de estudios sociales del GED dura ${G.minutes.social} minutos, con 2 minutos de instrucciones y revisión final, sin pausa, lo que lo convierte en la más corta de las cuatro materias. ged.com indica tres habilidades: leer para comprender en estudios sociales, analizar hechos históricos y argumentos, y usar números y gráficas en estudios sociales. Hay una calculadora en pantalla con hoja de referencia, y en un centro se puede llevar una TI-30XS. Las preguntas son de opción múltiple, arrastrar y soltar, completar, seleccionar un área y menús desplegables. El contenido abarca cívica y gobierno de EE. UU., historia del país, economía, y geografía y el mundo. Estudios sociales se aprueba con ${G.pass}, y desde ${G.collegeCredit} puede valer hasta ${G.creditsBySubject.social} créditos universitarios de ciencias sociales, según la institución. Las ocho preguntas de arriba son nuestras: la rama que interpreta las leyes, los senadores por estado, la Carta de Derechos, precio y demanda, la Enmienda 19, los pesos y contrapesos, una tasa de desempleo calculada con las cifras de un pueblo y el ecuador. Como en ciencias, gran parte del examen real da un texto, un mapa o una gráfica y pregunta qué muestra; saber de antemano ayuda a leer más rápido, pero la prueba está en la pantalla.`,
+    faqs: [
+      { q: '¿Qué entra en el examen de estudios sociales del GED?', a: 'ged.com indica tres habilidades: leer para comprender en estudios sociales, analizar hechos históricos y argumentos, y usar números y gráficas. En contenido, las preguntas cubren cívica y gobierno, historia de EE. UU., economía, y geografía y el mundo. Los documentos fundacionales, como la Constitución, suelen aparecer en fragmentos cortos.' },
+      { q: '¿Cuánto dura estudios sociales del GED?', a: `${G.minutes.social} minutos sin pausa, con 2 minutos de instrucciones y revisión. Es la más corta de las cuatro materias, frente a ${G.minutes.science} de ciencias, ${G.minutes.math} de matemáticas y ${G.minutes.rla} de lenguaje, así que el ritmo importa: alrededor de un minuto por pregunta es una meta razonable.` },
+      { q: '¿Es difícil el examen de estudios sociales del GED?', a: 'Es corto y se basa en la lectura, así que premia la lectura atenta más que la memoria. La dificultad está en los documentos: un texto antiguo con palabras poco comunes, o una gráfica con dos escalas. Practicar con documentos fundacionales y gráficas económicas quita casi toda la sorpresa.' },
+      { q: '¿Hay que saberse fechas para el GED?', a: 'Algunos puntos de referencia ayudan a situar un documento: 1776, la Constitución en 1787, la Guerra Civil en la década de 1860, la Enmienda 19 en 1920, la época de los derechos civiles. Pero las preguntas rara vez piden solo una fecha; piden qué muestra un hecho o documento, o en qué se diferencian dos fuentes.' },
+    ],
+    body: (h) => `
+<h2>Cómo se ve cada habilidad en pantalla</h2>
+<p><strong>Leer para comprender</strong>: un fragmento de una decisión de la Corte Suprema y una pregunta sobre su argumento principal. <strong>Analizar hechos históricos y argumentos</strong>: dos discursos sobre la misma ley y una pregunta sobre en qué discrepan, o qué afirmación es un hecho y cuál una opinión. <strong>Usar números y gráficas</strong>: una gráfica del desempleo en diez años, o una tabla de población por estado, y una pregunta sobre una tendencia, una diferencia o una tasa.</p>
+<h2>La cívica en cinco ideas</h2>
+<p>La mayoría de las preguntas de cívica se apoyan en una lista corta. <strong>Separación de poderes</strong>: el Congreso hace las leyes, el presidente las ejecuta, los tribunales las interpretan. <strong>Pesos y contrapesos</strong>: cada rama puede limitar a las otras, como con un veto o un fallo judicial. <strong>Federalismo</strong>: el poder se reparte entre el gobierno nacional y los estados. <strong>Derechos</strong>: la Carta de Derechos y las enmiendas posteriores protegen a las personas frente al gobierno. <strong>Representación</strong>: dos senadores por estado, escaños de la Cámara según la población.</p>
+${h.mini('ready', { p: ['st', 'n'], d: { st: 'OH', n: 1 }, t: 'Examen de práctica o repetición: el precio en su estado' })}
+<h2>Un ejemplo de economía más</h2>
+<p>Una ciudad sube su salario mínimo. Una empresaria dice que contratará a menos personas; un dirigente sindical dice que los trabajadores gastarán más en los comercios locales. ¿Qué afirmación es una predicción y no un hecho? Las dos son predicciones: ninguna ha ocurrido todavía. Una pregunta así comprueba que usted separa lo que una fuente afirma que pasará de lo que muestran de verdad los datos que tiene delante.</p>
+<h2>Puntajes y créditos</h2>
+<p>Estudios sociales se aprueba con ${h.n(G.pass)} y se califica aparte de las demás materias. Desde ${h.n(G.collegeReady)} alcanza College Ready; desde ${h.n(G.collegeCredit)}, ged.com indica que puede valer hasta ${G.creditsBySubject.social} créditos de ciencias sociales, según la institución. Como el examen es corto, una repetición también le ocupa menos tiempo del día, pero cuesta el mismo precio de repetición que cualquier otra materia en su estado.</p>
+<h2>Cómo prepararse</h2>
+<p>Lea el Preámbulo, la Carta de Derechos y algunos resúmenes cortos de fallos de la Corte Suprema; vuelven como fragmentos. Practique gráficas de precios, salarios y población. Trabaje la diferencia entre hecho, opinión y afirmación con las ${h.a('ged-language-arts', 'preguntas de lenguaje')}, que entrenan la misma lectura. Si piensa examinarse en línea, hace falta un resultado verde de GED Ready en estudios sociales en los ${G.readyGreenDays} días previos; la ${h.a('ged-ready', 'página de GED Ready')} lo detalla.</p>
+<h2>Dos fuentes sobre el mismo hecho</h2>
+<p>Un formato frecuente pone dos documentos lado a lado: por ejemplo, un editorial de 1935 que elogia un programa nuevo y una carta del mismo año que lo critica. Las preguntas piden en qué coinciden ambos autores, qué punto de vista adopta cada uno o cuál usa estadísticas como prueba. Antes de responder, resuma mentalmente cada fuente en una línea: quién la escribió, cuándo y qué quiere que crea el lector. Esa línea suele bastar para descartar dos de las cuatro opciones.</p>
+<h2>Mapas y geografía</h2>
+<p>Las preguntas de geografía rara vez piden nombrar un país de memoria. Muestran un mapa con su leyenda y preguntan qué indica: dónde la población es más densa, qué región cruza un río, cómo cambió una frontera. Lea la leyenda y la escala antes que la pregunta, como con cualquier gráfica, y mire la fecha del mapa: un mapa de 1850 y uno actual pueden mostrar el mismo lugar de forma muy distinta.</p>`,
+  },
+});

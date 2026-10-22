@@ -1,5 +1,5 @@
 /**
- * Test d'entraînement : une question à la fois, quatre réponses (boutons aria-pressed), correction et
+ * Test d'entraînement : une question à la fois, quatre réponses (boutons aria-pressed empilés, sans role="group" : ce ne sont pas des bascules), correction et
  * explication, score à la fin. Questions écrites par Radif Partners (src/data/quiz.ts), jamais celles d'un
  * examen réel : le cadre le dit. Premier rendu identique au build (pas de hasard, ordre des choix fixe).
  */
@@ -46,7 +46,7 @@ export default function Quiz({ kind, lang, costHref, idPrefix = 'q' }: Props) {
     <div className="rounded-xl border border-navy-200 bg-white p-4 sm:p-5">
       <p className="text-xs font-medium uppercase tracking-wide text-navy-600">{i + 1} {t.of} {qs.length}</p>
       <p id={`${idPrefix}-q`} className="mt-2 text-base font-semibold text-navy-900">{q.q[k]}</p>
-      <div role="group" aria-labelledby={`${idPrefix}-q`} className="mt-3 grid gap-2">
+      <div data-choices aria-describedby={`${idPrefix}-q`} className="mt-3 grid gap-2">
         {ord.map((j) => {
           const on = pick === j;
           const state = shown ? (j === q.a ? 'border-emerald-600 bg-emerald-50' : on ? 'border-red-500 bg-red-50' : 'border-navy-200') : on ? 'border-accent-700 bg-navy-50' : 'border-navy-200 hover:bg-navy-50';

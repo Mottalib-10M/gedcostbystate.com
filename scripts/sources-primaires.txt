@@ -1,0 +1,5 @@
+# GED Testing Service (ACE et Pearson), qui conçoit et administre le GED : pages de règles de chaque État (prix, âge, résidence, reprises), notes, GED Ready.
+ged.com
+
+# Programme HiSET (ETS, administré par PSI) : pages de chaque État (frais par épreuve, aides) et règles de notation.
+hiset.org

@@ -3,9 +3,9 @@
 
 GED: one policy page per state on ged.com (https://www.ged.com/policies/<state>/), read on 2026-10-22.
      Verbatim extracts (age, residency, price, retake rules, retake cost) are archived in
-     data/facts/ged-state-pages.json. Michigan's English page returned 404: the Spanish page was read.
+     data/facts/brut/ged-state-pages.json. Michigan's English page returned 404: the Spanish page was read.
 HiSET: one requirements page per state on hiset.org (PSI), read on 2026-10-22; our notes of each page,
-     with the figures as printed, are in data/facts/hiset-state-pages.json.
+     with the figures as printed, are in data/facts/brut/hiset-state-pages.json.
 
 Every figure below was copied by hand from those pages (no scraping at runtime). A value the page does not
 state is None and the site says "not published" instead of guessing.
@@ -134,31 +134,31 @@ H = {
 # Aide de l'État, telle que la page la décrit (texte court, en/es). Seulement les États qui en publient une.
 GHELP = {
  'AK': ('Alaska pays the first attempt of each subject while funding lasts.', 'Alaska paga el primer intento de cada materia mientras haya fondos.'),
- 'DC': ('With the code DCSAVE36, the first attempt of each subject at a test center costs $3.75; online it is full price.', 'Con el código DCSAVE36, el primer intento de cada materia en un centro cuesta 3,75 $; en línea se paga el precio completo.'),
- 'IL': ('The Illinois Community College Board takes $26 off the first attempt of each subject with the code ILSAVE2026, while funding lasts.', 'El Illinois Community College Board descuenta 26 $ del primer intento de cada materia con el código ILSAVE2026, mientras haya fondos.'),
- 'MD': ('Maryland lowers the first attempt of each subject to $14.25 with the code MDGED2175, at a center or online; retakes are not subsidized.', 'Maryland reduce el primer intento de cada materia a 14,25 $ con el código MDGED2175, en un centro o en línea; las repeticiones no se subsidian.'),
- 'MN': ('Minnesota takes $10 off the first attempt of each subject with the code MNGED10, while funding lasts.', 'Minnesota descuenta 10 $ del primer intento de cada materia con el código MNGED10, mientras haya fondos.'),
+ 'DC': ('With the code DCSAVE36, the first attempt of each subject at a test center costs $3.75; online it is full price.', 'Con el código DCSAVE36, el primer intento de cada materia en un centro cuesta $3.75; en línea se paga el precio completo.'),
+ 'IL': ('The Illinois Community College Board takes $26 off the first attempt of each subject with the code ILSAVE2026, while funding lasts.', 'El Illinois Community College Board descuenta $26 del primer intento de cada materia con el código ILSAVE2026, mientras haya fondos.'),
+ 'MD': ('Maryland lowers the first attempt of each subject to $14.25 with the code MDGED2175, at a center or online; retakes are not subsidized.', 'Maryland reduce el primer intento de cada materia a $14.25 con el código MDGED2175, en un centro o en línea; las repeticiones no se subsidian.'),
+ 'MN': ('Minnesota takes $10 off the first attempt of each subject with the code MNGED10, while funding lasts.', 'Minnesota descuenta $10 del primer intento de cada materia con el código MNGED10, mientras haya fondos.'),
  'MS': ('Mississippi pays every attempt at a Mississippi test center, retakes included (codes MSFREEGED and MSRETAKE); it does not pay for online testing.', 'Misisipi paga todos los intentos en un centro de Misisipi, repeticiones incluidas (códigos MSFREEGED y MSRETAKE); no paga el examen en línea.'),
  'PA': ('Pennsylvania covers the first attempt of up to four subjects for residents, at a public center or online, with the code PAFreeGED.', 'Pensilvania cubre el primer intento de hasta cuatro materias para residentes, en un centro público o en línea, con el código PAFreeGED.'),
  'NM': ('New Mexico residents can have their fees covered by the Free High School Equivalency program after scoring 145 or more on GED Ready within 60 days of scheduling.', 'Los residentes de Nuevo México pueden obtener las tarifas pagadas por el programa Free High School Equivalency tras sacar 145 o más en GED Ready dentro de los 60 días previos a programar.'),
- 'OH': ('First-time testers can get a voucher worth up to $80 through a Career-Technical Planning District.', 'Quien se examina por primera vez puede recibir un bono de hasta 80 $ a través de un Career-Technical Planning District.'),
+ 'OH': ('First-time testers can get a voucher worth up to $80 through a Career-Technical Planning District.', 'Quien se examina por primera vez puede recibir un bono de hasta $80 a través de un Career-Technical Planning District.'),
  'RI': ('People with limited income can get a fee waiver if they prove financial hardship and score Likely to Pass on GED Ready.', 'Las personas con ingresos limitados pueden obtener una exención si prueban dificultad económica y sacan Likely to Pass en GED Ready.'),
  'TN': ('The test can be paid by vouchers for people who attend a local adult education program.', 'El examen puede pagarse con bonos para quien asiste a un programa local de educación para adultos.'),
  'TX': ('The HSE Subsidy Program pays the test fees of eligible people aged 21 and older through a Texas Workforce Commission Adult Education and Literacy program, while funding lasts.', 'El HSE Subsidy Program paga las tarifas de las personas elegibles de 21 años o más a través de un programa de Educación y Alfabetización de Adultos de la Texas Workforce Commission, mientras haya fondos.'),
  'NY': ('New York State pays for every GED subject; there is nothing to pay.', 'El estado de Nueva York paga todas las materias del GED; no hay nada que pagar.'),
- 'CT': ('Connecticut charges $0 per subject; only a $13 registration fee is due.', 'Connecticut cobra 0 $ por materia; solo se paga una inscripción de 13 $.'),
+ 'CT': ('Connecticut charges $0 per subject; only a $13 registration fee is due.', 'Connecticut cobra $0 por materia; solo se paga una inscripción de $13.'),
  'WV': ('There is no cost to the test taker, but the test is scheduled through a local adult learning or Option Pathway program.', 'No cuesta nada a quien se examina, pero el examen se programa a través de un programa local de aprendizaje para adultos u Option Pathway.'),
 }
 HHELP = {
- 'CA': ('A fee waiver exists for those who qualify; the $20 state fee is paid once, at the first booking.', 'Existe una exención para quien califica; la tarifa estatal de 20 $ se paga una vez, en la primera reserva.'),
+ 'CA': ('A fee waiver exists for those who qualify; the $20 state fee is paid once, at the first booking.', 'Existe una exención para quien califica; la tarifa estatal de $20 se paga una vez, en la primera reserva.'),
  'GA': ('Vouchers are available through the Georgia state program.', 'Hay bonos disponibles a través del programa estatal de Georgia.'),
  'IN': ('Indiana provides test code vouchers; paper and computer fees are set by each test center.', 'Indiana ofrece bonos con código; las tarifas en papel y computadora las fija cada centro.'),
  'ME': ('There is no fee for Maine residents.', 'No hay tarifa para los residentes de Maine.'),
  'MA': ('Massachusetts pays the first test in each subject plus two retakes per subject.', 'Massachusetts paga el primer examen de cada materia y dos repeticiones por materia.'),
- 'MN': ('With the code MNHISET8, Minnesota residents get $8 off each subtest the first time, up to $40.', 'Con el código MNHISET8, los residentes de Minnesota obtienen 8 $ de descuento en cada prueba la primera vez, hasta 40 $.'),
+ 'MN': ('With the code MNHISET8, Minnesota residents get $8 off each subtest the first time, up to $40.', 'Con el código MNHISET8, los residentes de Minnesota obtienen $8 de descuento en cada prueba la primera vez, hasta $40.'),
  'MS': ('Since July 1, 2026, Mississippi pays the HiSET tests and two retests per subtest.', 'Desde el 1 de julio de 2026, Misisipi paga los exámenes HiSET y dos repeticiones por prueba.'),
  'NM': ('Vouchers are available through the state office or adult education providers.', 'Hay bonos a través de la oficina estatal o de los proveedores de educación para adultos.'),
- 'OH': ('Vouchers worth $80 are available for paper or computer testing.', 'Hay bonos de 80 $ para el examen en papel o en computadora.'),
+ 'OH': ('Vouchers worth $80 are available for paper or computer testing.', 'Hay bonos de $80 para el examen en papel o en computadora.'),
  'PA': ('Pennsylvania covers up to five subtests for residents with the code PAFreeHiSET.', 'Pensilvania cubre hasta cinco pruebas para residentes con el código PAFreeHiSET.'),
  'TN': ('The HiSET Voucher Program, through local adult education, covers all costs of the exams.', 'El HiSET Voucher Program, a través de la educación para adultos local, cubre todos los costos de los exámenes.'),
 }
@@ -176,7 +176,17 @@ WAIT = {
  'WY': dict(w1=7, w3=7, cap=7),
 }
 
-out = {'read': READ, 'states': []}
+# Relevé automatique des prix GED (scripts/update-data.mjs) : prix au centre, en ligne et reprise réduite,
+# seulement quand la phrase de la page a été retrouvée telle quelle. Le reste (aides, âges, attentes) est lu à la main.
+RELEVE = os.path.join(ROOT, 'data/facts/releve-ged.json')
+GREAD = READ
+if os.path.exists(RELEVE):
+    rel = json.load(open(RELEVE))
+    for code, vals in rel.get('states', {}).items():
+        if code in G: G[code].update(vals)
+    if rel.get('read') and rel['read'] > GREAD: GREAD = rel['read']
+
+out = {'read': max(READ, GREAD), 'gedRead': GREAD, 'hisetRead': READ, 'states': []}
 for code, en, es, gslug, hslug in STATES:
     s = {'code': code, 'en': en, 'es': es}
     if code in G:

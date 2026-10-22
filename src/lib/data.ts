@@ -48,6 +48,8 @@ export const GENERAL = {
     subtests: 5, passEach: 8, outOf: 20, passTotal: 45, totalMax: 100, essayMin: 2, essayMax: 6, ccrEach: 15, ccrEssay: 4,
     minutes: { math: 90, science: 80, social: 70, reading: 65, writing: 120 } as Record<string, number>,
     readingSpanish: 80, atHomeProctor: 23,
+    /** hiset.org, Get Your Scores : jours ouvrés avant les notes officielles ; part des lycéens diplômés que le seuil CCR égale. */
+    scoreDays: 3, writingDays: 5, ccrPct: 75,
   },
 };
 

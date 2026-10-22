@@ -1,0 +1,77 @@
+import { defineGuide } from '../../lib/page-types';
+import { GENERAL } from '../../lib/data';
+import { full } from '../../lib/stats';
+import { st, usd, usd0, tot, rank, attemptsTable, gedTries, hisetTries } from './_u';
+import { gedCost, hisetCost } from '../../lib/engine/hse';
+
+const G = GENERAL.ged;
+const g = st('OH').ged!, x = st('OH').hiset!;
+const c = tot('OH'), hc = tot('OH', 'hiset'), hh = full('OH', 'hiset', 'online').total, r = rank('OH');
+const gv = gedCost('OH', { mode: 'center', parts: 4, retakes: 0, qualify: true }).total;
+const hv = hisetCost('OH', { mode: 'center', parts: 5, retakes: 0, qualify: true }).total;
+/** Lecture prudente : si le bon ne couvre que la première matière, l'économie plafonne au prix d'une matière. */
+const gvLow = c - Math.min(g.voucher!, g.c);
+const hRetake = x.hc! - x.tf!;
+
+export default defineGuide({
+  id: 'ohio', group: 'states', order: 45, state: 'OH',
+  tool: 'cost', toolArg: { st: 'OH', test: 'ged', qualify: 'yes' },
+  related: ['ged-vs-hiset', 'free-ged', 'hiset-scores', 'ged-retake', 'ged-requirements', 'new-york'],
+  sources: ['ged-OH', 'hiset-OH', 'ged-policies', 'hiset-states'],
+  en: {
+    slug: 'ged-ohio',
+    nav: 'GED and HiSET in Ohio', card: `GED ${usd0(c, 'en')}, HiSET ${usd0(hc, 'en')}, and the ${usd(g.voucher!, 'en')} voucher`,
+    title: 'GED Ohio 2026: $36 a Subject, $80 Voucher, HiSET $26 a Test',
+    description: `GED in Ohio in 2026: ${usd(g.c, 'en')} a subject, ${usd(g.rc!, 'en')} retakes, an ${usd(g.voucher!, 'en')} first-time voucher through a CTPD, and the HiSET at ${usd(x.hc!, 'en')} a subtest. See your total and the rules.`,
+    h1: 'GED and HiSET in Ohio: prices, the $80 voucher and the rules',
+    intro: `Ohio offers both tests, each with an ${usd(g.voucher!, 'en')} voucher. Without it the GED costs ${usd0(c, 'en')} and the HiSET ${usd0(hc, 'en')} at a center.`,
+    resume: `Ohio offers the GED and the HiSET, and both come with an ${usd(g.voucher!, 'en')} voucher. The GED costs ${usd(g.c, 'en')} per subject at a test center or online, ${usd0(c, 'en')} for the four subjects, rank ${r.pos} of ${r.of} GED jurisdictions by center price. First-time testers can get a voucher worth up to ${usd(g.voucher!, 'en')} after contacting a Career-Technical Planning District for career and educational guidance, before scheduling. Only one voucher code is allowed, and ged.com says it applies to the first subtest only, which the page does not reconcile with a subject price of ${usd(g.c, 'en')}: ask the district what it covers. A failed subject retaken at a center costs ${usd(g.rc!, 'en')}. The HiSET costs ${usd(x.hc!, 'en')} per subtest on paper or computer, ${usd0(hc, 'en')} for the five, and ${usd(x.ho!, 'en')} at home; its ${usd(g.voucher!, 'en')} voucher codes apply to paper or computer testing and must be entered at registration, with no refund afterward. Its second and third attempts cost ${usd(hRetake, 'en')}. Both tests require Ohio residency and an age of 18, or 16 and 17 with a school withdrawal form and notarized consent. A passed GED earns the Ohio High School Equivalency Diploma.`,
+    faqs: [
+      { q: 'How much does the GED cost in Ohio?', a: `${usd(g.c, 'en')} per subject at a test center or online, ${usd0(c, 'en')} for the four subjects. A retake at a center costs ${usd(g.rc!, 'en')}, the Ohio center fee; online, every retake costs ${usd(g.o!, 'en')}. First-time testers can get a voucher worth up to ${usd(g.voucher!, 'en')} through a Career-Technical Planning District.` },
+      { q: 'How do I get the Ohio GED voucher?', a: `Contact a Career-Technical Planning District for career and educational guidance before you schedule; the voucher is for first-time testers. ged.com allows one voucher code and says it applies to the first subtest only. Since that page does not explain how up to ${usd(g.voucher!, 'en')} applies to a ${usd(g.c, 'en')} subject, ask the district what your code covers.` },
+      { q: 'Is the HiSET cheaper than the GED in Ohio?', a: `Yes, at a center: ${usd0(hc, 'en')} for the five HiSET subtests against ${usd0(c, 'en')} for the four GED subjects, before vouchers. With the ${usd(x.voucher!, 'en')} HiSET voucher the five subtests come to ${usd0(hv, 'en')}. At home the HiSET costs ${usd(x.ho!, 'en')} a subtest and the voucher does not apply.` },
+      { q: 'How many times can I retake a HiSET subtest in Ohio?', a: 'The Ohio page on hiset.org gives several figures: six attempts per calendar year in one place, three attempts with no wait then a 60-day wait in another, and five retakes within twelve months in the fee section. It also says the full fee is paid only on the first and fourth attempt. Confirm with the Ohio office before planning many retakes.' },
+    ],
+    body: (h) => `
+<h2>One subject, four attempts</h2>
+<p>The table follows one GED subject and one HiSET subtest through four attempts in Ohio, without any voucher. The GED gives one discounted retake per failed subject, so center attempts alternate between ${h.usd(g.c)} and ${h.usd(g.rc!)}. The HiSET charges the full ${h.usd(x.hc!)} on the first and fourth attempts and ${h.usd(hRetake)} on the second and third.</p>
+${attemptsTable(h, [['GED, test center', gedTries('OH', 'center', 3)], ['GED, online', gedTries('OH', 'online', 3)], ['HiSET, test center', hisetTries('OH', 'center', 3)], ['HiSET, at home', hisetTries('OH', 'home', 3)]], 'Ohio, one subject, four attempts, no voucher.')}
+${h.mini('cost', { p: ['test', 'qualify'], d: { st: 'OH', test: 'hiset', qualify: 'yes' }, t: 'Your Ohio total with the voucher' })}
+<h2>What the voucher is worth</h2>
+<p>For the HiSET the reading is simple: an ${h.usd(x.voucher!)} code on paper or computer brings five subtests from ${h.usd0(hc)} to ${h.usd0(hv)}, provided you enter it when you register. For the GED, ged.com says first-time testers get a voucher worth up to ${h.usd(g.voucher!)}, but also that only one code is allowed and that it applies to the first subtest only. Taken at face value across the test, it brings the four subjects from ${h.usd0(c)} to ${h.usd0(gv)}, which is what the calculator shows when you tick that you qualify. If it covers only one subject, the saving is at most ${h.usd(g.c)} and the total ${h.usd0(gvLow)}. We show both because the page supports both readings; the Career-Technical Planning District that issues the code is the one to ask.</p>
+<h2>GED or HiSET in Ohio</h2>
+<p>Before vouchers the HiSET costs ${h.usd0(c - hc)} less at a center, and its retakes are cheaper: ${h.usd(hRetake)} against ${h.usd(g.rc!)}. At home the order flips: the HiSET costs ${h.usd(x.ho!)} a subtest, ${h.usd0(hh)} for five, against ${h.usd(g.o!)} a GED subject online, and neither voucher is described for online testing. The GED needs ${h.n(G.pass)} in each subject; the HiSET needs ${h.n(GENERAL.hiset.passEach)} of ${h.n(GENERAL.hiset.outOf)} in each subtest plus a total, explained on the ${h.a('hiset-scores', 'HiSET scores page')}.</p>
+<h2>Who can test</h2>
+<p>Ohio requires residency for both tests. The standard GED age is 18. At 16 or 17 you submit a copy of the current withdrawal form signed by your school administrator and a consent form signed and notarized by a parent, guardian or court official. For the HiSET, testers aged 16 to 18 must be officially withdrawn from school and must not hold a high school diploma, and those aged 16 and 17 also need the notarized consent. Online, a parent or guardian of a GED tester under 18 must be present at check-in, and a green GED Ready score is required before each subject.</p>
+<h2>Retakes and the credential</h2>
+<p>At a center there is no wait after a first GED fail; after three attempts at a subject you wait 60 days. Online, one retake is allowed before the 60-day wait. The HiSET retake rules on hiset.org are not consistent, as the questions below explain, so confirm them before planning several attempts. A passed GED earns the Ohio High School Equivalency Diploma; transcripts and diplomas are requested through Diploma Sender. Tests can be taken in English or Spanish and combined. For a free state with strict calendar rules, compare the ${h.a('new-york', 'New York page')}.</p>`,
+  },
+  es: {
+    slug: 'ged-en-ohio',
+    nav: 'GED y HiSET en Ohio', card: `GED ${usd0(c, 'es')}, HiSET ${usd0(hc, 'es')} y el bono de ${usd(g.voucher!, 'es')}`,
+    title: 'GED en Ohio 2026: $36 por materia, bono de $80 y el HiSET',
+    description: `GED en Ohio en 2026: ${usd(g.c, 'es')} por materia, repeticiones de ${usd(g.rc!, 'es')}, un bono de ${usd(g.voucher!, 'es')} para el primer examen a través de un CTPD y el HiSET a ${usd(x.hc!, 'es')} por prueba. Calcule.`,
+    h1: 'GED y HiSET en Ohio: precios, el bono de $80 y las reglas',
+    intro: `Ohio ofrece los dos exámenes, cada uno con un bono de ${usd(g.voucher!, 'es')}. Sin él, el GED cuesta ${usd0(c, 'es')} y el HiSET ${usd0(hc, 'es')} en un centro.`,
+    resume: `Ohio ofrece el GED y el HiSET, y los dos tienen un bono de ${usd(g.voucher!, 'es')}. El GED cuesta ${usd(g.c, 'es')} por materia en un centro o en línea, ${usd0(c, 'es')} por las cuatro materias, puesto ${r.pos} de ${r.of} jurisdicciones del GED por precio en centro. Quien se examina por primera vez puede recibir un bono de hasta ${usd(g.voucher!, 'es')} tras contactar un Career-Technical Planning District para orientación profesional y educativa, antes de programar. Solo se admite un código, y ged.com indica que se aplica solo a la primera prueba, algo que la página no concilia con un precio de ${usd(g.c, 'es')} por materia: pregunte al distrito qué cubre. Una materia suspendida y repetida en un centro cuesta ${usd(g.rc!, 'es')}. El HiSET cuesta ${usd(x.hc!, 'es')} por prueba en papel o en computadora, ${usd0(hc, 'es')} las cinco, y ${usd(x.ho!, 'es')} en casa; sus códigos de ${usd(g.voucher!, 'es')} valen para papel o computadora y deben introducirse al registrarse, sin reembolso después. Su segundo y tercer intento cuestan ${usd(hRetake, 'es')}. Los dos exámenes exigen residencia en Ohio y 18 años, o 16 y 17 con un formulario de baja escolar y un permiso notariado. Un GED aprobado da el Ohio High School Equivalency Diploma.`,
+    faqs: [
+      { q: '¿Cuánto cuesta el GED en Ohio?', a: `${usd(g.c, 'es')} por materia en un centro o en línea, ${usd0(c, 'es')} por las cuatro materias. Una repetición en un centro cuesta ${usd(g.rc!, 'es')}, la tarifa del centro de Ohio; en línea, cada repetición cuesta ${usd(g.o!, 'es')}. Quien se examina por primera vez puede recibir un bono de hasta ${usd(g.voucher!, 'es')} a través de un Career-Technical Planning District.` },
+      { q: '¿Cómo se obtiene el bono del GED en Ohio?', a: `Contacte un Career-Technical Planning District para orientación profesional y educativa antes de programar; el bono es para quien se examina por primera vez. ged.com admite un solo código e indica que se aplica solo a la primera prueba. Como esa página no explica cómo se aplican hasta ${usd(g.voucher!, 'es')} a una materia de ${usd(g.c, 'es')}, pregunte al distrito qué cubre su código.` },
+      { q: '¿Es el HiSET más barato que el GED en Ohio?', a: `Sí, en un centro: ${usd0(hc, 'es')} por las cinco pruebas del HiSET frente a ${usd0(c, 'es')} por las cuatro materias del GED, antes de bonos. Con el bono de ${usd(x.voucher!, 'es')} del HiSET las cinco pruebas quedan en ${usd0(hv, 'es')}. En casa el HiSET cuesta ${usd(x.ho!, 'es')} por prueba y el bono no se aplica.` },
+      { q: '¿Cuántas veces puedo repetir una prueba del HiSET en Ohio?', a: 'La página de Ohio en hiset.org da varias cifras: seis intentos por año natural en un lugar, tres intentos sin espera y luego 60 días de espera en otro, y cinco repeticiones en doce meses en la sección de tarifas. También indica que la tarifa completa solo se paga en el primer y el cuarto intento. Confírmelo con la oficina de Ohio antes de prever muchas repeticiones.' },
+    ],
+    body: (h) => `
+<h2>Una materia, cuatro intentos</h2>
+<p>El cuadro sigue una materia del GED y una prueba del HiSET durante cuatro intentos en Ohio, sin bono. El GED da una repetición con descuento por materia suspendida, así que los intentos en un centro alternan entre ${h.usd(g.c)} y ${h.usd(g.rc!)}. El HiSET cobra los ${h.usd(x.hc!)} completos en el primer y el cuarto intento, y ${h.usd(hRetake)} en el segundo y el tercero.</p>
+${attemptsTable(h, [['GED, centro', gedTries('OH', 'center', 3)], ['GED, en línea', gedTries('OH', 'online', 3)], ['HiSET, centro', hisetTries('OH', 'center', 3)], ['HiSET, en casa', hisetTries('OH', 'home', 3)]], 'Ohio, una materia, cuatro intentos, sin bono.')}
+${h.mini('cost', { p: ['test', 'qualify'], d: { st: 'OH', test: 'hiset', qualify: 'yes' }, t: 'Su total en Ohio con el bono' })}
+<h2>Lo que vale el bono</h2>
+<p>Para el HiSET la lectura es sencilla: un código de ${h.usd(x.voucher!)} en papel o en computadora baja las cinco pruebas de ${h.usd0(hc)} a ${h.usd0(hv)}, siempre que lo introduzca al registrarse. Para el GED, ged.com dice que quien se examina por primera vez recibe un bono de hasta ${h.usd(g.voucher!)}, pero también que solo se admite un código y que se aplica solo a la primera prueba. Tomado al pie de la letra para todo el examen, baja las cuatro materias de ${h.usd0(c)} a ${h.usd0(gv)}, que es lo que muestra la calculadora cuando marca que califica. Si solo cubre una materia, el ahorro es como máximo ${h.usd(g.c)} y el total ${h.usd0(gvLow)}. Mostramos las dos lecturas porque la página admite ambas; el Career-Technical Planning District que emite el código es quien puede aclararlo.</p>
+<h2>GED o HiSET en Ohio</h2>
+<p>Antes de bonos el HiSET cuesta ${h.usd0(c - hc)} menos en un centro, y sus repeticiones son más baratas: ${h.usd(hRetake)} frente a ${h.usd(g.rc!)}. En casa el orden se invierte: el HiSET cuesta ${h.usd(x.ho!)} por prueba, ${h.usd0(hh)} las cinco, frente a ${h.usd(g.o!)} por materia del GED en línea, y ningún bono se describe para el examen en línea. El GED exige ${h.n(G.pass)} en cada materia; el HiSET exige ${h.n(GENERAL.hiset.passEach)} de ${h.n(GENERAL.hiset.outOf)} en cada prueba más un total, como explica la ${h.a('hiset-scores', 'página de puntajes del HiSET')}.</p>
+<h2>Quién puede examinarse</h2>
+<p>Ohio exige residencia para los dos exámenes. La edad general del GED es 18 años. A los 16 o 17 se presenta una copia del formulario de baja vigente firmado por la dirección de la escuela y un permiso firmado y notariado por un padre, tutor o funcionario judicial. Para el HiSET, quienes tienen de 16 a 18 años deben haber dejado oficialmente la escuela y no tener diploma de secundaria, y los de 16 y 17 también necesitan el permiso notariado. En línea, un padre o tutor de un menor de 18 debe estar presente al registrarse para el GED, y se exige un resultado verde en GED Ready antes de cada materia.</p>
+<h2>Repeticiones y credencial</h2>
+<p>En un centro no hay espera tras un primer suspenso del GED; tras tres intentos en una materia se esperan 60 días. En línea se permite una repetición antes de la espera de 60 días. Las reglas de repetición del HiSET en hiset.org no son coherentes, como explican las preguntas de abajo, así que confírmelas antes de prever varios intentos. Un GED aprobado da el Ohio High School Equivalency Diploma; los expedientes y diplomas se piden a través de Diploma Sender. Los exámenes pueden hacerse en inglés o en español y combinarse. Para un estado gratuito con un calendario estricto, compare con la ${h.a('new-york', 'página de Nueva York')}.</p>`,
+  },
+});

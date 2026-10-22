@@ -1,5 +1,7 @@
 {
  "read": "2026-10-22",
+ "gedRead": "2026-10-22",
+ "hisetRead": "2026-10-22",
  "states": [
   {
    "code": "AL",
@@ -103,7 +105,7 @@
     "res": "yes",
     "help": {
      "en": "A fee waiver exists for those who qualify; the $20 state fee is paid once, at the first booking.",
-     "es": "Existe una exención para quien califica; la tarifa estatal de 20 $ se paga una vez, en la primera reserva."
+     "es": "Existe una exención para quien califica; la tarifa estatal de $20 se paga una vez, en la primera reserva."
     },
     "url": "https://hiset.org/california/"
    }
@@ -153,7 +155,7 @@
     "cap": 3,
     "help": {
      "en": "Connecticut charges $0 per subject; only a $13 registration fee is due.",
-     "es": "Connecticut cobra 0 $ por materia; solo se paga una inscripción de 13 $."
+     "es": "Connecticut cobra $0 por materia; solo se paga una inscripción de $13."
     },
     "url": "https://www.ged.com/policies/connecticut/"
    }
@@ -195,7 +197,7 @@
     "readyBeforeRetake": true,
     "help": {
      "en": "With the code DCSAVE36, the first attempt of each subject at a test center costs $3.75; online it is full price.",
-     "es": "Con el código DCSAVE36, el primer intento de cada materia en un centro cuesta 3,75 $; en línea se paga el precio completo."
+     "es": "Con el código DCSAVE36, el primer intento de cada materia en un centro cuesta $3.75; en línea se paga el precio completo."
     },
     "url": "https://www.ged.com/policies/district_of_columbia/"
    }
@@ -309,7 +311,7 @@
     "w3": 60,
     "help": {
      "en": "The Illinois Community College Board takes $26 off the first attempt of each subject with the code ILSAVE2026, while funding lasts.",
-     "es": "El Illinois Community College Board descuenta 26 $ del primer intento de cada materia con el código ILSAVE2026, mientras haya fondos."
+     "es": "El Illinois Community College Board descuenta $26 del primer intento de cada materia con el código ILSAVE2026, mientras haya fondos."
     },
     "url": "https://www.ged.com/policies/illinois/"
    },
@@ -464,7 +466,7 @@
     "w3": 60,
     "help": {
      "en": "Maryland lowers the first attempt of each subject to $14.25 with the code MDGED2175, at a center or online; retakes are not subsidized.",
-     "es": "Maryland reduce el primer intento de cada materia a 14,25 $ con el código MDGED2175, en un centro o en línea; las repeticiones no se subsidian."
+     "es": "Maryland reduce el primer intento de cada materia a $14.25 con el código MDGED2175, en un centro o en línea; las repeticiones no se subsidian."
     },
     "url": "https://www.ged.com/policies/maryland/"
    }
@@ -546,7 +548,7 @@
     "w3": 60,
     "help": {
      "en": "Minnesota takes $10 off the first attempt of each subject with the code MNGED10, while funding lasts.",
-     "es": "Minnesota descuenta 10 $ del primer intento de cada materia con el código MNGED10, mientras haya fondos."
+     "es": "Minnesota descuenta $10 del primer intento de cada materia con el código MNGED10, mientras haya fondos."
     },
     "url": "https://www.ged.com/policies/minnesota/"
    },
@@ -561,7 +563,7 @@
     "res": "no",
     "help": {
      "en": "With the code MNHISET8, Minnesota residents get $8 off each subtest the first time, up to $40.",
-     "es": "Con el código MNHISET8, los residentes de Minnesota obtienen 8 $ de descuento en cada prueba la primera vez, hasta 40 $."
+     "es": "Con el código MNHISET8, los residentes de Minnesota obtienen $8 de descuento en cada prueba la primera vez, hasta $40."
     },
     "url": "https://hiset.org/minnesota/"
    }
@@ -867,7 +869,7 @@
     "w3": 60,
     "help": {
      "en": "First-time testers can get a voucher worth up to $80 through a Career-Technical Planning District.",
-     "es": "Quien se examina por primera vez puede recibir un bono de hasta 80 $ a través de un Career-Technical Planning District."
+     "es": "Quien se examina por primera vez puede recibir un bono de hasta $80 a través de un Career-Technical Planning District."
     },
     "url": "https://www.ged.com/policies/ohio/"
    },
@@ -881,7 +883,7 @@
     "res": "yes",
     "help": {
      "en": "Vouchers worth $80 are available for paper or computer testing.",
-     "es": "Hay bonos de 80 $ para el examen en papel o en computadora."
+     "es": "Hay bonos de $80 para el examen en papel o en computadora."
     },
     "url": "https://hiset.org/ohio/"
    }
