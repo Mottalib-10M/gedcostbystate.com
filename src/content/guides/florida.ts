@@ -15,9 +15,9 @@ export default defineGuide({
   en: {
     slug: 'ged-florida',
     nav: 'GED in Florida', card: `${usd(g.c, 'en')} a subject at a center, ${usd(g.rc!, 'en')} retakes, a state diploma`,
-    title: 'GED Florida 2026: $38 a Subject, $12 Retakes, State Diploma',
+    title: 'GED Cost in Florida 2026: $38 a Subject and $12 Retakes',
     description: `GED in Florida in 2026: ${usd(g.c, 'en')} a subject at a test center, ${usd(g.rc!, 'en')} for a retake, no online option listed, rules for ages 16 and 17 and the free e-diploma. Price it.`,
-    h1: 'GED in Florida: price, retakes, age rules and the state diploma',
+    h1: 'How much does the GED cost in Florida? Retakes, age rules and the diploma',
     intro: `Four subjects at ${usd(g.c, 'en')} each: ${usd0(c, 'en')} at a Florida test center. The calculator adds your retakes.`,
     resume: `Florida charges ${usd(g.c, 'en')} per GED subject at a test center, ${usd0(c, 'en')} for the four subjects, which places it ${r.pos} of ${r.of} GED jurisdictions by center price. A subject you fail can be retaken at a center for ${usd(g.rc!, 'en')}: GED Testing Service waives its own fee on that retake and only the Florida center fee is left. The page ged.com publishes for Florida lists no online price, so the test is taken at a center; Florida is one of ${S.ged.noOnline.length} jurisdictions in that case. There is no residency requirement, but you need a valid government photo ID and a Florida address. The standard age is 18; at 16 or 17 you file a formal declaration of intent to terminate school enrollment and a notarized Underage Testing Form. GED Ready is not required before a subject at a center. There is no waiting period before the first two retakes of a subject, and 60 days after a third attempt. Passing all four earns the State of Florida High School Diploma, with one free electronic diploma and one free electronic transcript sent automatically.`,
     faqs: [
@@ -47,7 +47,7 @@ ${h.mini('plan', { p: ['st', 'parts', 'weeks'], d: { st: 'FL', parts: 4, weeks: 
     nav: 'GED en Florida', card: `${usd(g.c, 'es')} por materia en un centro, repeticiones de ${usd(g.rc!, 'es')}, diploma estatal`,
     title: 'GED en Florida 2026: $38 por materia, repetición y diploma',
     description: `GED en Florida en 2026: ${usd(g.c, 'es')} por materia en un centro, ${usd(g.rc!, 'es')} por repetición, sin opción en línea indicada, reglas para 16 y 17 años y diploma electrónico gratis.`,
-    h1: 'GED en Florida: precio, repeticiones, edad y el diploma estatal',
+    h1: '¿Cuánto cuesta el GED en Florida? Repeticiones, edad y el diploma estatal',
     intro: `Cuatro materias a ${usd(g.c, 'es')} cada una: ${usd0(c, 'es')} en un centro de Florida. La calculadora suma sus repeticiones.`,
     resume: `Florida cobra ${usd(g.c, 'es')} por materia del GED en un centro, ${usd0(c, 'es')} por las cuatro materias, lo que la sitúa en el puesto ${r.pos} de ${r.of} jurisdicciones del GED por precio en centro. Una materia suspendida puede repetirse en un centro por ${usd(g.rc!, 'es')}: GED Testing Service no cobra su propia tarifa en esa repetición y solo queda la tarifa del centro de Florida. La página que ged.com publica para Florida no indica precio en línea, así que el examen se hace en un centro; Florida es una de las ${S.ged.noOnline.length} jurisdicciones en ese caso. No se exige residencia, pero hace falta una identificación oficial con foto vigente y una dirección en Florida. La edad general es 18 años; a los 16 o 17 se presenta una declaración formal de intención de dejar la escuela y un Underage Testing Form notariado. GED Ready no se exige antes de una materia en un centro. No hay espera antes de las dos primeras repeticiones de una materia, y sí 60 días tras un tercer intento. Aprobar las cuatro da el State of Florida High School Diploma, con un diploma electrónico y un expediente electrónico gratuitos enviados automáticamente.`,
     faqs: [

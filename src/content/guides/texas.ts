@@ -16,9 +16,9 @@ export default defineGuide({
   en: {
     slug: 'ged-texas',
     nav: 'GED in Texas', card: `${usd(g.c, 'en')} a subject, two cheap retakes, TxCHSE`,
-    title: 'GED Texas 2026: $36.25 a Subject, Retakes, Age 16 and 17',
+    title: 'GED Cost in Texas 2026: $36.25 a Subject, Retakes, Age 16-17',
     description: `GED in Texas in 2026: ${usd(g.c, 'en')} a subject at a center, ${usd(g.o!, 'en')} online, two ${usd(g.rc!, 'en')} retakes per subject, ages 16 and 17, the HSE Subsidy Program. Price your plan.`,
-    h1: 'GED in Texas: price, retakes and who can test',
+    h1: 'How much does the GED cost in Texas? Price, retakes and who can test',
     intro: `The four subjects cost ${usd0(c, 'en')} at a Texas center and ${usd0(o, 'en')} online. Set your own case in the calculator.`,
     resume: `Texas charges ${usd(g.c, 'en')} per GED subject at a test center and ${usd(g.o!, 'en')} online, so the four subjects cost ${usd0(c, 'en')} at a center and ${usd0(o, 'en')} online. That ranks Texas ${r.pos} of ${r.of} GED jurisdictions by center price. Its strong point is retakes: each subject bought at full price and not passed comes with two discounted retakes at a center, usable within ${G.retakeWindowDays} days, for ${usd(g.rc!, 'en')} each, the Texas test center fee, since GED Testing Service waives its own fee. Online there is no discount: each retake is ${usd(g.o!, 'en')}. You must be a Texas resident and 18, or 17 with parental permission, or 16 in narrow cases. The HSE Subsidy Program can pay the fees of eligible residents aged 21 and older through a Texas Workforce Commission adult education program, while funding lasts. The credential is the State of Texas Certificate of High School Equivalency, or TxCHSE, issued by the Texas Education Agency. hiset.org does not list Texas, so the GED is the only test offered on the pages we read.`,
     faqs: [
@@ -48,7 +48,7 @@ ${h.mini('retake', { p: ['st', 'tries'], d: { st: 'TX' }, t: 'Your retakes in Te
     nav: 'GED en Texas', card: `${usd(g.c, 'es')} por materia, dos repeticiones baratas, TxCHSE`,
     title: 'GED en Texas 2026: $36.25 por materia, repeticiones y edad',
     description: `GED en Texas en 2026: ${usd(g.c, 'es')} por materia en un centro, ${usd(g.o!, 'es')} en línea, dos repeticiones de ${usd(g.rc!, 'es')}, edades 16 y 17 y el HSE Subsidy Program. Calcule su caso.`,
-    h1: 'GED en Texas: precio, repeticiones y quién puede examinarse',
+    h1: '¿Cuánto cuesta el GED en Texas? Precio, repeticiones y quién puede examinarse',
     intro: `Las cuatro materias cuestan ${usd0(c, 'es')} en un centro de Texas y ${usd0(o, 'es')} en línea. Ponga su caso en la calculadora.`,
     resume: `Texas cobra ${usd(g.c, 'es')} por materia del GED en un centro y ${usd(g.o!, 'es')} en línea, así que las cuatro materias cuestan ${usd0(c, 'es')} en un centro y ${usd0(o, 'es')} en línea. Eso sitúa a Texas en el puesto ${r.pos} de ${r.of} jurisdicciones del GED por precio en centro. Su punto fuerte son las repeticiones: cada materia pagada a precio completo y no aprobada trae dos repeticiones con descuento en un centro, a usar en ${G.retakeWindowDays} días, por ${usd(g.rc!, 'es')} cada una, la tarifa del centro de Texas, porque GED Testing Service no cobra la suya. En línea no hay descuento: cada repetición cuesta ${usd(g.o!, 'es')}. Hay que ser residente de Texas y tener 18 años, o 17 con permiso de los padres, o 16 en casos limitados. El HSE Subsidy Program puede pagar las tarifas de los residentes elegibles de 21 años o más a través de un programa de educación para adultos de la Texas Workforce Commission, mientras haya fondos. La credencial es el State of Texas Certificate of High School Equivalency, o TxCHSE, que emite la Texas Education Agency. hiset.org no incluye a Texas, así que el GED es el único examen que ofrecen las páginas que leímos.`,
     faqs: [

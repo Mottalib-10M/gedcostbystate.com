@@ -19,7 +19,7 @@ const tx = full('TX', 'ged'), ca = full('CA', 'ged'), fl = full('FL', 'ged'), ca
 const en: HomeLang = {
   title: 'GED Test Cost by State 2026: GED and HiSET Fees, Retakes',
   description: 'GED test cost by state in 2026: the full price of the 4 GED subjects or the 5 HiSET subtests in all 50 states and DC, retakes, free testing, ages and rules.',
-  h1: 'GED and HiSET cost in your state',
+  h1: 'GED and HiSET testing near you: the cost in your state, center or online',
   intro: 'Pick your state and the test: the total you will pay, what the state covers, what a retake adds and the age and residency rules, from the official state pages.',
   facts: [
     { k: 'Most common GED price', v: `${usd(36, 'en')} per subject in ${S.ged.price36} states` },
@@ -57,6 +57,7 @@ ${x.mini('ready', { p: ['st', 'n'], d: { st: 'OH' }, t: 'GED Ready against the p
     { q: 'Is the HiSET cheaper than the GED?', a: `In ${S.cheaperHiset.length} of the ${S.both.length} states that offer both, yes, at a test center on a first pass. The HiSET has five subtests against four GED subjects, but its price per part is often lower, and its second and third attempts cost only the center fee. The GED costs less in ${list(S.cheaperGed, 'en')}.` },
     { q: 'Can I take the GED online from home?', a: `In ${g.online} jurisdictions, yes. You need a webcam, a private room, a government ID and a green GED Ready score within ${G.readyGreenDays} days before each subject. ${list(g.noOnline.slice(0, 4), 'en')} and a few others list no online test. Online retakes are full price, unlike retakes at a test center.` },
     { q: 'How many times can I retake a GED subject?', a: 'There is no lifetime limit in most states. At a test center the first two retakes usually have no waiting period, then you wait 60 days after the third attempt. New York and Connecticut make you wait 60 days before any retake and allow three attempts a year; Wyoming asks for seven days between attempts.' },
+    { q: 'How do I find a GED testing center near me?', a: 'The official test is booked in your ged.com account: when you schedule a subject, you choose between online and a test center and pick a center by location. HiSET appointments are made from your state’s page on hiset.org. The price is the one your testing state charges; Arizona, Georgia and Michigan have no residency rule, so a center across a state line is an option there.' },
     { q: 'What score do I need to pass?', a: `GED: ${G.pass} on each of the four subjects, scored ${G.min} to ${G.max}; scores do not add up across subjects. HiSET: ${Hs.passEach} of ${Hs.outOf} on each of the five subtests, at least ${Hs.passTotal} of ${Hs.totalMax} in total and ${Hs.essayMin} of ${Hs.essayMax} on the essay. Both scales come from the official program pages.` },
     { q: 'Are the practice questions on this site real GED questions?', a: 'No. The GED and the HiSET are secure tests and their questions are not published. Our questions are written by us from the topics the two programs publish, with the reasoning for each answer, so you can see what kind of thinking each subject asks for. Your score on them does not predict an official score.' },
   ],
@@ -65,7 +66,7 @@ ${x.mini('ready', { p: ['st', 'n'], d: { st: 'OH' }, t: 'GED Ready against the p
 const es: HomeLang = {
   title: 'Costo del examen GED por estado 2026: GED, HiSET y repetir',
   description: 'Costo del examen GED por estado en 2026: precio de las 4 materias del GED o las 5 pruebas del HiSET en los 50 estados y DC, repeticiones, examen gratis y edad.',
-  h1: 'Costo del GED y del HiSET en su estado',
+  h1: 'Examen GED y HiSET cerca de usted: el costo en su estado, en centro o en línea',
   intro: 'Elija su estado y el examen: el total que pagará, lo que cubre el estado, lo que suma repetir y las reglas de edad y residencia, según las páginas oficiales de cada estado.',
   facts: [
     { k: 'Precio más común del GED', v: `${usd(36, 'es')} por materia en ${S.ged.price36} estados` },
@@ -103,6 +104,7 @@ ${x.mini('ready', { p: ['st', 'n'], d: { st: 'OH' }, t: 'GED Ready frente al pre
     { q: '¿Es el HiSET más barato que el GED?', a: `En ${S.cheaperHiset.length} de los ${S.both.length} estados que ofrecen ambos, sí, en un centro y en el primer paso. El HiSET tiene cinco pruebas frente a cuatro materias del GED, pero su precio por parte suele ser menor, y su segundo y tercer intento cuestan solo la tarifa del centro. El GED cuesta menos en ${list(S.cheaperGed, 'es')}.` },
     { q: '¿Puedo tomar el GED en línea desde casa?', a: `En ${g.online} jurisdicciones, sí. Necesita una cámara web, una habitación privada, una identificación oficial y un resultado verde en GED Ready en los ${G.readyGreenDays} días previos a cada materia. ${list(g.noOnline.slice(0, 4), 'es')} y algunos otros no indican examen en línea. Repetir en línea se paga completo, a diferencia de un centro.` },
     { q: '¿Cuántas veces puedo repetir una materia del GED?', a: 'En la mayoría de los estados no hay límite de por vida. En un centro las dos primeras repeticiones no suelen tener espera; después del tercer intento hay que esperar 60 días. Nueva York y Connecticut exigen 60 días antes de cualquier repetición y permiten tres intentos al año; Wyoming pide siete días entre intentos.' },
+    { q: '¿Cómo encuentro un centro de examen GED cerca de mí?', a: 'El examen oficial se reserva en su cuenta de ged.com: al programar una materia, elige entre en línea y un centro de examen, y escoge el centro por ubicación. Las citas del HiSET se hacen desde la página de su estado en hiset.org. El precio es el que cobra el estado donde se examina; Arizona, Georgia y Míchigan no piden residencia, así que allí un centro al otro lado de la frontera estatal es una opción.' },
     { q: '¿Qué puntaje necesito para aprobar?', a: `GED: ${G.pass} en cada una de las cuatro materias, en una escala de ${G.min} a ${G.max}; los puntajes no se suman entre materias. HiSET: ${Hs.passEach} de ${Hs.outOf} en cada una de las cinco pruebas, al menos ${Hs.passTotal} de ${Hs.totalMax} en total y ${Hs.essayMin} de ${Hs.essayMax} en el ensayo. Ambas escalas vienen de las páginas oficiales de cada programa.` },
     { q: '¿Las preguntas de práctica de este sitio son preguntas reales del GED?', a: 'No. El GED y el HiSET son exámenes protegidos y sus preguntas no se publican. Nuestras preguntas las escribimos nosotros a partir de los temas que publican ambos programas, con el razonamiento de cada respuesta, para que vea qué tipo de razonamiento pide cada materia. Su resultado en ellas no anticipa un puntaje oficial.' },
   ],

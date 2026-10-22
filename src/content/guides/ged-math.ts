@@ -12,9 +12,9 @@ export default defineGuide({
   en: {
     slug: 'ged-math-practice-test',
     nav: 'GED math practice', card: '8 math questions with every step, the formula sheet',
-    title: 'GED Math Practice Test 2026: Free Questions, Worked Steps',
+    title: 'GED Math Practice Test 2026: Free Questions and Answers',
     description: 'GED math practice test for 2026: 8 free questions on percents, area, equations, slope and functions, every step worked out, plus the calculator rules.',
-    h1: 'GED math practice test, with every step worked out',
+    h1: 'GED math practice test: questions and answers, every step worked out',
     intro: `Eight questions on the four math topics of the GED, written by us, each with the full working. The real math test lasts ${G.minutes.math} minutes.`,
     resume: `The GED mathematical reasoning test lasts ${G.minutes.math} minutes and covers four topics listed by ged.com: basic math, geometry, basic algebra, and graphs and functions. You get a formula sheet and a calculator reference sheet; an on-screen calculator is available on the second part, and at a test center you may bring your own TI-30XS. Questions are multiple choice, drag and drop, fill in the blank, select an area and drop-down. Like every subject, math passes at ${G.pass} on a scale of ${G.min} to ${G.max}, and a score of ${G.collegeCredit} or more can be worth up to three college credits in math, depending on the college. The eight questions above are ours, written from those topics: a phone bill, the area of a rug, a linear equation, a slope, a discount with sales tax, a missing score from a mean, the area of a circle and a function with a negative input. Every explanation shows the full working, because on the real test most points are lost on a step, not on the method: a percentage taken the wrong way, a sign dropped, a radius confused with a diameter.`,
     faqs: [
@@ -44,7 +44,7 @@ ${h.mini('pass', { p: ['math'], d: { math: 138 }, t: 'How far is your math score
     nav: 'Práctica de matemáticas GED', card: '8 preguntas de matemáticas con cada paso, la hoja de fórmulas',
     title: 'Práctica de matemáticas del GED 2026: preguntas y pasos',
     description: 'Práctica de matemáticas del GED para 2026: 8 preguntas gratis: porcentajes, áreas, ecuaciones, pendiente y funciones, cada paso resuelto y la calculadora.',
-    h1: 'Práctica de matemáticas del GED, con cada paso resuelto',
+    h1: 'Práctica de matemáticas del GED: preguntas y respuestas, cada paso resuelto',
     intro: `Ocho preguntas sobre los cuatro temas de matemáticas del GED, escritas por nosotros, cada una con el cálculo completo. El examen real dura ${G.minutes.math} minutos.`,
     resume: `El examen de razonamiento matemático del GED dura ${G.minutes.math} minutos y cubre cuatro temas que indica ged.com: matemáticas básicas, geometría, álgebra básica, y gráficas y funciones. Se entrega una hoja de fórmulas y una hoja de referencia de la calculadora; en la segunda parte hay una calculadora en pantalla, y en un centro se puede llevar una TI-30XS propia. Las preguntas son de opción múltiple, arrastrar y soltar, completar, seleccionar un área y menús desplegables. Como todas las materias, matemáticas se aprueba con ${G.pass} en una escala de ${G.min} a ${G.max}, y un puntaje de ${G.collegeCredit} o más puede valer hasta tres créditos universitarios de matemáticas, según la institución. Las ocho preguntas de arriba son nuestras, escritas a partir de esos temas: una factura de teléfono, el área de una alfombra, una ecuación lineal, una pendiente, un descuento con impuesto, un puntaje que falta en una media, el área de un círculo y una función con un valor negativo. Cada explicación muestra el cálculo completo, porque en el examen real la mayoría de los puntos se pierden en un paso, no en el método: un porcentaje aplicado al revés, un signo perdido, un radio confundido con un diámetro.`,
     faqs: [

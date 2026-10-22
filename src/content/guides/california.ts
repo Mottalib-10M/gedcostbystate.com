@@ -15,9 +15,9 @@ export default defineGuide({
   en: {
     slug: 'ged-california',
     nav: 'GED and HiSET in California', card: `GED ${usd0(c, 'en')} or HiSET ${usd0(hc, 'en')}, side by side`,
-    title: 'GED California 2026: $41 a Subject, HiSET, Age 17 Rules',
+    title: 'GED Cost in California 2026: $41 a Subject, HiSET, Age 17',
     description: `GED in California in 2026: ${usd(g.c, 'en')} a subject at a center or online, ${usd(g.rc!, 'en')} retakes, the HiSET with its ${usd(x.once!, 'en')} state fee, and the age 17 rules. Compare both tests.`,
-    h1: 'GED and HiSET in California: which costs less, and who can test',
+    h1: 'How much does the GED cost in California, and is the HiSET cheaper?',
     intro: `California offers both tests. The GED costs ${usd0(c, 'en')} for four subjects, the HiSET ${usd0(hc, 'en')} for five with the state fee. Compare them for your case.`,
     resume: `California is one of the states where you can choose between the GED and the HiSET, and the cheaper choice depends on how many retakes you expect. The GED costs ${usd(g.c, 'en')} per subject, the same at a test center and online, so ${usd0(c, 'en')} for the four subjects, rank ${r.pos} of ${r.of} GED jurisdictions by center price. A failed subject retaken at a center costs ${usd(g.rc!, 'en')}, the California center fee, while online every retake is ${usd(g.o!, 'en')}. The HiSET costs ${usd(x.hc!, 'en')} per subtest at a center and ${usd(x.ho!, 'en')} at home, plus a ${usd(x.once!, 'en')} state fee paid once, at the first booking: ${usd0(hc, 'en')} for the five subtests at a center. Its second and third attempts cost only ${usd(hRetake, 'en')}, and a fee waiver exists for those who qualify. Both tests require California residency and an age of 18, or 17 after at least 60 consecutive days out of school with a letter from the military, a college or an employer for the GED. The GED leads to the California High School Equivalency Certificate, which the state issues from age 18, and the HiSET to a credential issued by the state as well.`,
     faqs: [
@@ -47,7 +47,7 @@ ${h.mini('retake', { p: ['st', 'tries'], d: { st: 'CA' }, t: 'Your retakes in Ca
     nav: 'GED y HiSET en California', card: `GED ${usd0(c, 'es')} o HiSET ${usd0(hc, 'es')}, lado a lado`,
     title: 'GED en California 2026: $41 por materia, HiSET y los 17 años',
     description: `GED en California en 2026: ${usd(g.c, 'es')} por materia en un centro o en línea, repeticiones de ${usd(g.rc!, 'es')}, el HiSET con su tarifa de ${usd(x.once!, 'es')} y la regla de los 17 años. Compare.`,
-    h1: 'GED y HiSET en California: cuál cuesta menos y quién puede examinarse',
+    h1: '¿Cuánto cuesta el GED en California, y es más barato el HiSET?',
     intro: `California ofrece los dos exámenes. El GED cuesta ${usd0(c, 'es')} por cuatro materias y el HiSET ${usd0(hc, 'es')} por cinco con la tarifa estatal. Compárelos para su caso.`,
     resume: `California es uno de los estados donde se puede elegir entre el GED y el HiSET, y la opción más barata depende de cuántas repeticiones prevea. El GED cuesta ${usd(g.c, 'es')} por materia, lo mismo en un centro que en línea, así que ${usd0(c, 'es')} por las cuatro materias, puesto ${r.pos} de ${r.of} jurisdicciones del GED por precio en centro. Una materia suspendida y repetida en un centro cuesta ${usd(g.rc!, 'es')}, la tarifa del centro de California, mientras que en línea cada repetición cuesta ${usd(g.o!, 'es')}. El HiSET cuesta ${usd(x.hc!, 'es')} por prueba en un centro y ${usd(x.ho!, 'es')} en casa, más una tarifa estatal de ${usd(x.once!, 'es')} que se paga una vez, en la primera reserva: ${usd0(hc, 'es')} por las cinco pruebas en un centro. Su segundo y tercer intento cuestan solo ${usd(hRetake, 'es')}, y existe una exención para quien califica. Los dos exámenes exigen residencia en California y 18 años, o 17 tras al menos 60 días seguidos fuera de la escuela con una carta del ejército, de una institución o de un empleador para el GED. El GED lleva al California High School Equivalency Certificate, que el estado emite a partir de los 18 años, y el HiSET a una credencial que también emite el estado.`,
     faqs: [

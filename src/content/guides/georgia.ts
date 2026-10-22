@@ -16,9 +16,9 @@ export default defineGuide({
   en: {
     slug: 'ged-georgia',
     nav: 'GED and HiSET in Georgia', card: `GED ${usd0(c, 'en')} or HiSET ${usd0(hc, 'en')}: the HiSET costs less`,
-    title: 'GED Georgia 2026: $46 a Subject, HiSET $34, Free GED Ready',
+    title: 'GED Cost in Georgia 2026: $46 a Subject, HiSET $34 a Test',
     description: `GED in Georgia in 2026: ${usd(g.c, 'en')} a subject at a center or online, ${usd(g.rc!, 'en')} retakes, the HiSET at ${usd(x.hc!, 'en')} a subtest, free GED Ready for residents and no residency rule.`,
-    h1: 'GED and HiSET in Georgia: the HiSET is the cheaper test',
+    h1: 'How much does the GED cost in Georgia? The HiSET costs less',
     intro: `Georgia offers both tests, and here the HiSET costs less: ${usd0(hc, 'en')} for five subtests against ${usd0(c, 'en')} for the four GED subjects.`,
     resume: `Georgia offers the GED and the HiSET, and it is one of the states where the HiSET is the cheaper of the two at a test center. The GED costs ${usd(g.c, 'en')} per subject, at a center or online, so ${usd0(c, 'en')} for the four subjects, rank ${r.pos} of ${r.of} GED jurisdictions by center price. The HiSET costs ${usd(x.hc!, 'en')} per subtest at a center, ${usd0(hc, 'en')} for the five, and ${usd(x.ho!, 'en')} at home. Retakes favor the HiSET too: its second and third attempts cost ${usd(hRetake, 'en')}, while a GED retake at a center costs ${usd(g.rc!, 'en')} and only one is discounted per failed subject. Georgia residents can take the official GED Ready practice test at no cost, and adult education classes offer test fee scholarships for financial hardship; the HiSET has vouchers through the state program. Neither test asks for Georgia residency. The standard age is 18; at 16 and 17 you must be approved by the Office of Adult Education, which requires a state-approved adult education program. A passed GED earns the Georgia GED Diploma, through the Technical College System of Georgia.`,
     faqs: [
@@ -46,7 +46,7 @@ ${h.mini('retake', { p: ['st', 'test', 'tries'], d: { st: 'GA', test: 'hiset' },
     nav: 'GED y HiSET en Georgia', card: `GED ${usd0(c, 'es')} o HiSET ${usd0(hc, 'es')}: el HiSET cuesta menos`,
     title: 'GED en Georgia 2026: $46 por materia, el HiSET más barato',
     description: `GED en Georgia en 2026: ${usd(g.c, 'es')} por materia en un centro o en línea, repeticiones de ${usd(g.rc!, 'es')}, HiSET a ${usd(x.hc!, 'es')} por prueba, GED Ready gratis para residentes, sin residencia.`,
-    h1: 'GED y HiSET en Georgia: el HiSET es el examen más barato',
+    h1: '¿Cuánto cuesta el GED en Georgia? El HiSET es más barato',
     intro: `Georgia ofrece los dos exámenes, y aquí el HiSET cuesta menos: ${usd0(hc, 'es')} por cinco pruebas frente a ${usd0(c, 'es')} por las cuatro materias del GED.`,
     resume: `Georgia ofrece el GED y el HiSET, y es uno de los estados donde el HiSET es el más barato de los dos en un centro. El GED cuesta ${usd(g.c, 'es')} por materia, en un centro o en línea, así que ${usd0(c, 'es')} por las cuatro materias, puesto ${r.pos} de ${r.of} jurisdicciones del GED por precio en centro. El HiSET cuesta ${usd(x.hc!, 'es')} por prueba en un centro, ${usd0(hc, 'es')} las cinco, y ${usd(x.ho!, 'es')} en casa. Las repeticiones también favorecen al HiSET: su segundo y tercer intento cuestan ${usd(hRetake, 'es')}, mientras que una repetición del GED en un centro cuesta ${usd(g.rc!, 'es')} y solo una tiene descuento por materia suspendida. Los residentes de Georgia pueden hacer el examen de práctica oficial GED Ready sin costo, y las clases de educación para adultos ofrecen becas para la tarifa en caso de dificultad económica; el HiSET tiene bonos a través del programa estatal. Ningún examen exige residencia en Georgia. La edad general es 18 años; a los 16 y 17 hace falta la aprobación de la Office of Adult Education, que exige un programa aprobado de educación para adultos. Un GED aprobado da el Georgia GED Diploma, a través del Technical College System of Georgia.`,
     faqs: [
