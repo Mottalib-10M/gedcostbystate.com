@@ -1,6 +1,6 @@
 /** Configuration centrale du site (générée par new-site.py). */
-export const SITE_URL = "https://us-ged-hiset.example";
-export const SITE_NAMES: Record<string, string> = {"en": "HSE Cost Check", "es": "HSE Cost Check"};
+export const SITE_URL = "https://gedcostbystate.com";
+export const SITE_NAMES: Record<string, string> = {"en": "GED Cost by State", "es": "GED Cost by State"};
 export const LANG_TAGS: Record<string, string> = {"en": "en-US", "es": "es-US"};
 export const OG_LOCALES: Record<string, string> = {"en": "en_US", "es": "es_US"};
 export const LOCALE_TAG = 'en-US';
@@ -16,7 +16,7 @@ export const AUTHOR_DESC: Record<string, string> = {"en": "Radif Partners reads 
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"en": ["GED test fees by state", "HiSET exam fees by state", "High school equivalency age waivers", "GED and HiSET passing scores", "State-funded free GED testing", "GED retake policies"], "es": ["Tarifas del examen GED por estado", "Tarifas del examen HiSET por estado", "Permisos de edad para la equivalencia de la secundaria", "Puntajes para aprobar el GED y el HiSET", "Examen GED gratis pagado por el estado", "Reglas para repetir el GED"]};
-export const CONTACT_EMAIL = "contact@us-ged-hiset.example";
+export const CONTACT_EMAIL = "contact@gedcostbystate.com";
 export const THEME_COLOR = '#1F4E8C';
 export const LOGO_SYMBOL = 'HSE';
 export const BING_VERIFY_CODE = '';

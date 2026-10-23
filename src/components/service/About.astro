@@ -11,8 +11,8 @@ interface Props { lang: Locale }
 const { lang } = Astro.props;
 const path = route('about', lang);
 const en = lang === 'en';
-const title = en ? 'HSE Cost Check 2026: Publisher, Sources and Independence' : 'Quiénes somos: editor y fuentes de HSE Cost Check, 2026';
-const description = en ? 'HSE Cost Check is published by Radif Partners: GED and HiSET fees for all 50 states and DC read on the official pages in 2026, no account, no class to sell.' : 'HSE Cost Check lo publica Radif Partners: tarifas 2026 del GED y del HiSET en 50 estados y DC, leídas en las páginas oficiales, sin cuenta ni clases que vender.';
+const title = en ? 'GED Cost by State 2026: Publisher, Sources and Independence' : 'Quiénes somos: editor y fuentes de GED Cost by State, 2026';
+const description = en ? 'GED Cost by State is published by Radif Partners: GED and HiSET fees for all 50 states and DC read on the official pages in 2026, no account, no class to sell.' : 'GED Cost by State lo publica Radif Partners: tarifas 2026 del GED y del HiSET en 50 estados y DC, leídas en las páginas oficiales, sin cuenta ni clases que vender.';
 const s = (k: string, t: string) => srcLink(k, lang, t);
 const name = en ? 'About' : 'Quiénes somos';
 ---

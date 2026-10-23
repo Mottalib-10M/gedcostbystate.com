@@ -1,6 +1,6 @@
 {
- "name": "HSE Cost Check",
- "short_name": "HSE Cost Check",
+ "name": "GED Cost by State",
+ "short_name": "GED Cost by State",
  "description": "GED and HiSET cost in every US state for 2026: price per subject, retakes, free testing, minimum age and residency, read on the official state pages and added up.",
  "start_url": "/en/",
  "display": "standalone",

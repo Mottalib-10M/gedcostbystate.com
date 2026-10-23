@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /*?*
 
-Sitemap: https://us-ged-hiset.example/sitemap-index.xml
+Sitemap: https://gedcostbystate.com/sitemap-index.xml
